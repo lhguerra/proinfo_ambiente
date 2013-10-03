@@ -176,6 +176,8 @@ header {
   background-color: (@beige);
   padding-top: 96px;
   padding-bottom: 64px;
+
+  &:extend(.container);
 }
 
 // boxes styles
@@ -327,6 +329,53 @@ header {
   }
 }
 
+// start styles
+#login {
+  padding-right: 20px;
+
+  &:extend(.col-md-offset-1, .col-md-12);
+
+  div {
+    &:extend(.col-md-23);
+
+    input {
+      padding: 4px;
+      margin: 4px;
+      float: none;
+
+      &:extend(.col-md-13);
+    }
+  }
+
+  button {
+    margin: 4px 4px 20px 4px;
+  }
+
+  a {
+  }
+}
+
+#register {
+  border-left: 2px solid @gray;
+  padding-left: 20px;
+
+  &:extend(.col-md-9);
+
+  div {
+
+    input, select {
+      padding: 4px;
+      margin: 4px;
+
+      &:extend(.col-md-19);
+    }
+  }
+
+  button {
+    margin: 4px;
+  }
+}
+
 // home styles
 #bem-vindo {
   padding-bottom: 40px;
@@ -445,7 +494,9 @@ footer {
     opacity: 1;
   }
 
-    div {
+  div {
+
+    &:extend(.container);
 
     ul {
       list-style: none;
