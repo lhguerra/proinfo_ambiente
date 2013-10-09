@@ -24,29 +24,24 @@
     <!-- less compiler -->
     <script src="js/less-1.4.1.min.js" type="text/javascript"></script>
 
+    <!-- jquery scrollbar -->
+    <script src="js/jquery.custom-scrollbar.js" type="text/javascript"></script>
+    <link href="css/jquery.custom-scrollbar.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".scroll").customScrollbar({
+          skin: "default-skin", 
+          hScroll: false
+        });
+      });
+    </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
-    
-    <!-- bxSlider Javascript file -->
-    <script src="js/jquery.bxslider.min.js"></script>
-    <!-- bxSlider CSS file -->
-    <link href="css/jquery.bxslider.css" rel="stylesheet" />
-
-    <!-- bxslider function -->
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $('.bxslider').bxSlider({
-          minSlides: 4,
-          maxSlides: 4,
-          slideWidth: 200,
-          slideMargin: 30,
-          pager: false
-        });
-      });
-    </script>
   </head>
 
   <body>
@@ -147,36 +142,52 @@
                       </p>
                     </div>
                     <div class="col-md-offset-1 col-md-10">
-                      <div class="col-md-24 comment-box">
+                      <article class="col-md-24 comment-box">
                         <h3>Comentarios sobre o curso</h3>
                         <div class="type-comment">
-                          <img class="comment-thumb" src="img/home-picture.jpg" />
-                          <div class="input-group">
-                            <input placeholder="deixe seu comentario" type="text" class="form-control">
-                            <span class="input-group-btn">
-                              <button class="btn btn-default" type="button">Comentar</button>
-                            </span>
+                            <img class="comment-thumb" src="img/home-picture.jpg" />
+                            <div class="input-group">
+                              <input placeholder="deixe seu comentario" type="text" class="form-control">
+                              <span class="input-group-btn">
+                                <button class="btn btn-default" type="button">Comentar</button>
+                              </span>
+                            </div>
                           </div>
-                          <div class="clear"></div>
-                        </div>
-                        <div class="comment-container">
+                        <div class="comment-container scroll">
                           <div class="one-comment">
                             <img class="comment-thumb" src="img/home-picture.jpg" />
                             <p>Lorem ipsum dolor sit amet.</p>
-                            <div class="clear"></div>
                           </div>
                           <div class="one-comment">
                             <img class="comment-thumb" src="img/home-picture.jpg" />
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                            <div class="clear"></div>
                           </div>
                           <div class="one-comment">
                             <img class="comment-thumb" src="img/home-picture.jpg" />
                             <p>Lorem ipsum dolor sit amet.</p>
-                            <div class="clear"></div>
+                          </div>
+                          <div class="one-comment">
+                            <img class="comment-thumb" src="img/home-picture.jpg" />
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="one-comment">
+                            <img class="comment-thumb" src="img/home-picture.jpg" />
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="one-comment">
+                            <img class="comment-thumb" src="img/home-picture.jpg" />
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="one-comment">
+                            <img class="comment-thumb" src="img/home-picture.jpg" />
+                            <p>Lorem ipsum dolor sit amet.</p>
+                          </div>
+                          <div class="one-comment">
+                            <img class="comment-thumb" src="img/home-picture.jpg" />
+                            <p>Lorem ipsum dolor sit amet.</p>
                           </div>
                         </div>
-                      </div>
+                      </article>
                     </div>
                   </article>
                 </div>
