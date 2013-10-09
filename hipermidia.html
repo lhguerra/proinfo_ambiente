@@ -24,6 +24,19 @@
     <!-- less compiler -->
     <script src="js/less-1.4.1.min.js" type="text/javascript"></script>
 
+    <!-- jquery scrollbar -->
+    <script src="js/jquery.custom-scrollbar.js" type="text/javascript"></script>
+    <link href="css/jquery.custom-scrollbar.css" rel="stylesheet" />
+
+    <script type="text/javascript">
+      $(document).ready(function() {
+        $(".scroll").customScrollbar({
+          skin: "default-skin", 
+          hScroll: false
+        });
+      });
+    </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -76,12 +89,98 @@
       </div>
     </header>
 
-    <div id="content" class="container" style="height: 1000px;">
+    <div id="content" class="container hipermidia" style="height: 1000px;">
       <aside>
-        <a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
-        <a href="#"><span class="glyphicon glyphicon-comment"></span></a>
-        <a href="#"><span class="glyphicon glyphicon-list"></span></a>
-        <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+        <ul>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
+          </li>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-comment"></span></a>
+            <article class="col-md-offset-1 col-md-9 comment-box">
+              <h3>Comentarios sobre o curso</h3>
+              <div class="type-comment">
+                  <img class="comment-thumb" src="img/home-picture.jpg" />
+                  <div class="input-group">
+                    <input placeholder="deixe seu comentario" type="text" class="form-control">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button">Comentar</button>
+                    </span>
+                  </div>
+                </div>
+              <div class="comment-container scroll">
+                <div class="one-comment">
+                  <img class="comment-thumb" src="img/home-picture.jpg" />
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="one-comment">
+                  <img class="comment-thumb" src="img/home-picture.jpg" />
+                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                </div>
+                <div class="one-comment">
+                  <img class="comment-thumb" src="img/home-picture.jpg" />
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="one-comment">
+                  <img class="comment-thumb" src="img/home-picture.jpg" />
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="one-comment">
+                  <img class="comment-thumb" src="img/home-picture.jpg" />
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="one-comment">
+                  <img class="comment-thumb" src="img/home-picture.jpg" />
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="one-comment">
+                  <img class="comment-thumb" src="img/home-picture.jpg" />
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <div class="one-comment">
+                  <img class="comment-thumb" src="img/home-picture.jpg" />
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+              </div>
+            </article>
+          </li>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-list"></span></a>
+            <ul>
+              <li>
+                <a href="#">Apresentacao</a>
+              </li>
+              <li>
+                <a href="#">Escolha de Cenarios</a>
+                <ul>
+                  <li>
+                    <a href="#">Cenario 1</a>
+                  </li>
+                  <li>
+                    <a href="#">Cenario 2</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Unidade um</a>
+                <ul>
+                  <li>
+                    <a href="#">Secao tal</a>
+                  </li>
+                  <li>
+                    <a href="#">Secao tal</a>
+                  </li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Unidade dois</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#"><span class="glyphicon glyphicon-search"></span></a>
+          </li>
+        </ul>
       </aside>
     </div> <!-- /container -->
     

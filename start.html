@@ -50,7 +50,7 @@
             <input type="text" placeholder="Nome de usuario ou e-mail">
             <input type="password" placeholder="senha">
           </div>
-          <a href="#">Esqueci minha senha</a>
+          <a data-toggle="modal" href="#forgot">Esqueci minha senha</a>
           <div>
             <button type="button" class="btn btn-primary">Enviar</button>
             <input type="checkbox">Continuar conectado(a)
@@ -72,12 +72,55 @@
             <button type="button" class="btn btn-primary">Cadastrar</button><br />
             ou
             <br />
-            <button type="button" class="btn btn-primary">Entrar como visitante</button>
+            <button data-toggle="modal" href="#visitor" type="button" class="btn btn-primary">Entrar como visitante</button>
           </div>
         </article>
+
+        <!-- forgot password -->
+          <div class="modal fade " id="forgot" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Esqueceu sua senha?</h4>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Insira seu e-mail cadastrado no ambiente.
+                  </p>
+                  <p>
+                    Sua senha sera enviada para este e-mail.
+                  </p>
+                  <input type="email">
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Confirmar</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
+
+        <!-- visitor -->
+          <div class="modal fade " id="visitor" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                  <h4 class="modal-title">Tem certeza de que nao quer se juntar a nos?</h4>
+                </div>
+                <div class="modal-body">
+                  <p>
+                    Somente com cadastro e possivel acessar todas as funcionalidades do curso no ambiente web e no aplicativo movel (comentar, compartilhar, organizar seus materiais favoritos, etc.).
+                  </p>
+                  <p><strong>Tem certeza de que não quer se cadastrar?</strong></p>
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Sim, quero me cadastrar.</button>
+                  <button type="button" class="btn btn-default" data-dismiss="modal">Não, obrigado.</button>
+                </div>
+              </div><!-- /.modal-content -->
+            </div><!-- /.modal-dialog -->
+          </div><!-- /.modal -->
       </section>
-    </div> <!-- /container -->
-    
+    </div>
     <footer>
       <div>
         <ul>

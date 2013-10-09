@@ -7,10 +7,16 @@
 @yellow: #F59C1F;
 @beige: #EDE9DC;
 @gray: #2F312E;
+@white: rgba(255, 255, 255, 0.8);
+
+// boxes variables
+@shadow: 1px 1px 2px 0 gray;
+@radius: 3px;
 
 // general styles
 * {
   color: @gray;
+  font-weight: lighter;
 }
 
 body {
@@ -31,29 +37,30 @@ span {
 
 h1 {
   margin-top: 0;
-  color: @blue;
 
   &:extend(.col-md-offset-1);
 }
 
 h2 {
-  color: @blue;
 }
 
 h3 {
   padding: 0;
   margin: 0;
   line-height: 1.5em;
-  color: @blue;
 }
 
 h4 {
-  color: @blue;
+  color: @gray;
 
   span {
     margin-left: 4px;
     color: @blue;
   }
+}
+
+input, select {
+  padding: 4px;
 }
 
 .clear {
@@ -175,17 +182,18 @@ header {
 #content {
   background-color: (@beige);
   padding-top: 96px;
-  padding-bottom: 64px;
+  padding-bottom: 48px;
 
   &:extend(.container);
 }
 
 // boxes styles
 .box-modal {
-  background-color: white;
+  background-color: @white;
   padding: 4px;
   margin: 15px 0 15px 30px;
-  border-radius: 8px;
+  border-radius: @radius;
+  box-shadow: @shadow;
 
   &:extend(.col-md-5);
 
@@ -195,18 +203,22 @@ header {
 
     .progress {
       height: 8px;
+      margin-bottom: 10px;
     }
   }
 
   .modal-thumb {
         width: 30%;
+        border-radius: @radius;
+        box-shadow: @shadow;
   }
 }
 
 .mural-modal {
   margin: 15px 0 15px 30px;
-  background-color: white;
-  border-radius: 8px;
+  background-color: @white;
+  border-radius: @radius;
+  box-shadow: @shadow;
 
   &:extend(.col-md-5);
 
@@ -229,7 +241,7 @@ header {
 .vertical-box {
   padding: 0;
   background-color: (@beige - #111);
-  border-radius: 8px;
+  border-radius: @radius;
 
   &:extend(.col-md-6);
 
@@ -238,9 +250,10 @@ header {
   }
 
   .vertical-box-container {
+    height: 380px;
     
     .box-modal {
-      width: 220px;
+      width: 210px;
       margin: 4px;
     }
   }
@@ -248,8 +261,8 @@ header {
 
 .comment-box {
   padding: 0;
-  border-radius: 8px;
-  background-color: white;
+  border-radius: @radius;
+  background-color: @white;
 
   h3 {
     padding: 0 8px;
@@ -257,13 +270,12 @@ header {
 
   .comment-container {
     height: 300px;
-    overflow-y: scroll;
 
     .one-comment {
       padding: 4px;
-      margin: 4px;
-      background-color: (@beige);
-      border-radius: 8px;
+      margin: 8px;
+      background-color: @beige;
+      box-shadow: @shadow;
 
       .comment-thumb {
         width: 10%;
@@ -273,6 +285,11 @@ header {
         width: 85%;
         float: right;
         margin: 0;
+      }
+
+      span {
+
+        &:extend(.glyphicon);
       }
     }
   }
@@ -339,7 +356,6 @@ header {
     &:extend(.col-md-23);
 
     input {
-      padding: 4px;
       margin: 4px;
       float: none;
 
@@ -364,7 +380,6 @@ header {
   div {
 
     input, select {
-      padding: 4px;
       margin: 4px;
 
       &:extend(.col-md-19);
@@ -408,6 +423,22 @@ header {
     padding-right: 20px;
 
     &:extend(.col-md-offset-1, .col-md-11);
+
+    div {
+      margin-top: 16px;
+
+      a {
+        padding: 1px 8px;
+        display: block;
+        background-color: @white;
+        border-bottom: 1px solid (@beige - #111);
+
+        &:hover {
+          background-color: transparent;
+          text-decoration: none;
+        }
+      }
+    }
   }
 
   .profile-data {
@@ -426,26 +457,97 @@ header {
 }
 
 // hipermidia styles
-aside {
-  width: 30px;
-  position: fixed;
-  left: 50%;
-  margin-left: 480px;
-  top: 104px;
-  background-color: @beige;
-  border-top-right-radius: 8px;
-  border-bottom-right-radius: 8px;
+.hipermidia {
 
-  a {
-    display: block;
+  &:before {
+    content: "span";
+    position: fixed;
+    top: 300px;
 
-    &:hover {
-      background-color: rgba(255, 255, 255, 0.6)
-    }
+    &:extend(.glyphicon, .glyphicon-step-backward);
+  }
 
-    span {
-      padding: 4px;
-      margin: 4px;
+  aside {
+    width: 30px;
+    position: fixed;
+    left: 50%;
+    margin-left: 480px;
+    top: 104px;
+    background-color: @beige;
+    border-top-right-radius: @radius;
+    border-bottom-right-radius: @radius;
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        position: relative;
+
+        &:hover {
+
+          ul, article {
+            display: block !important;
+          }
+        }
+
+        a {
+          display: block;
+
+          &:hover {
+            background-color: rgba(255, 255, 255, 0.6);
+          }
+
+          span {
+            padding: 4px;
+            margin: 4px;
+          }
+        }
+
+        article {
+          width: 350px;
+        }
+
+        ul, article {
+          position: absolute;
+          right: 30px;
+          top: 0;
+          display: none;
+
+          li {
+            padding: 8px;
+            background-color: @white;
+            border-bottom: 1px solid (@beige - #111);
+            border-right: 1px solid (@beige - #111);
+            width: 200px;
+            text-align: right;
+            position: relative;
+
+            &:hover {
+              background-color: transparent;
+
+              ul {
+                right: 200px;
+              }
+            }
+
+            a {
+              background-color: transparent;
+
+              &:hover {
+                background-color: transparent;
+                text-decoration: none;
+              }
+            }
+
+            ul {
+              right: 20000px;
+              top: 0;
+            }
+          }
+        }
+      }
     }
   }
 }
@@ -472,6 +574,10 @@ aside {
 
     button {
       margin: 8px 0;
+    }
+      
+    .close {
+      margin: 0;
     }
 
     input {
