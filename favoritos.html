@@ -31,8 +31,14 @@
     <script type="text/javascript">
       $(document).ready(function() {
         $(".scroll").customScrollbar({
-          skin: "default-skin", 
+          skin: "default-skin",
           hScroll: false
+        });
+        $('.has-scroller-elms').on('shown.bs.modal', function () {
+          $(".scroll").customScrollbar({
+            skin: "default-skin",
+            hScroll: false
+          });
         });
       });
     </script>
@@ -105,7 +111,7 @@
             </div>
           </div>
           <a data-toggle="modal" href="#nucleo1"><h4>Nucleo de Base II</h4></a>
-          <div class="modal fade" id="nucleo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+          <div class="modal fade has-scroller-elms" id="nucleo1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
             <div class="modal-dialog container">
               <div class="modal-content">
                 <div class="modal-header">
@@ -128,7 +134,7 @@
                       </div>
                     </div>
                     <div class="col-md-offset-1 col-md-10">
-                      
+
                     </div>
                   </article>
                   <article class="row">
@@ -282,7 +288,7 @@
         </div>
       </section>
     </div> <!-- /container -->
-    
+
     <footer>
       <div class="container">
         <ul>
