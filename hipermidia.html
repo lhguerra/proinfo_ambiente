@@ -37,6 +37,24 @@
       });
     </script>
 
+    <!-- hipermidia menu -->
+    <script type="text/javascript">
+      $(function () {
+        var hipermidiaMenu = $('.hipermidia-show');
+
+        hipermidiaMenu.bind('click', function(foo) {
+          foo.preventDefault();
+          foo.stopImmediatePropagation()
+          var target = $(this).attr('data-target');
+          $('#' + target).toggleClass('appear');
+        });
+
+        $(window).bind('click', function(ev) {
+            $('.appear').removeClass('appear');
+          });
+      });
+    </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -95,9 +113,9 @@
           <li>
             <a href="#"><span class="glyphicon glyphicon-star-empty"></span></a>
           </li>
-          <li>
+          <li class="hipermidia-show" data-target="comments">
             <a href="#"><span class="glyphicon glyphicon-comment"></span></a>
-            <article class="col-md-offset-1 col-md-9 comment-box">
+            <article id="comments" class="col-md-offset-1 col-md-9 comment-box">
               <h3>Comentarios sobre o curso</h3>
               <div class="type-comment">
                   <img class="comment-thumb" src="img/home-picture.jpg" />
@@ -168,9 +186,9 @@
               </div>
             </article>
           </li>
-          <li>
+          <li class="hipermidia-show" data-target="menu">
             <a href="#"><span class="glyphicon glyphicon-list"></span></a>
-            <ul>
+            <ul id="menu">
               <li>
                 <a href="#">Apresentacao</a>
               </li>

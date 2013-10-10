@@ -7,7 +7,7 @@
 @yellow: #F59C1F;
 @beige: #EDE9DC;
 @gray: #2F312E;
-@white: rgba(255, 255, 255, 0.8);
+@white: rgba(255, 255, 255, 0.9);
 
 // boxes variables
 @shadow: 1px 1px 2px 0 gray;
@@ -485,13 +485,6 @@ header {
       li {
         position: relative;
 
-        &:hover {
-
-          ul, article {
-            display: block !important;
-          }
-        }
-
         a {
           display: block;
 
@@ -509,6 +502,10 @@ header {
           width: 350px;
         }
 
+        .appear {
+          display: block !important;
+        }
+
         ul, article {
           position: absolute;
           right: 30px;
@@ -516,7 +513,7 @@ header {
           display: none;
 
           li {
-            padding: 8px;
+            padding: 0;
             background-color: @white;
             border-bottom: 1px solid (@beige - #111);
             border-right: 1px solid (@beige - #111);
@@ -525,15 +522,18 @@ header {
             position: relative;
 
             &:hover {
-              background-color: transparent;
+              background-color: @beige;
 
               ul {
-                right: 200px;
+                right: 198px;
+                display: block;
               }
             }
 
             a {
               background-color: transparent;
+              display: block;
+              padding: 8px;
 
               &:hover {
                 background-color: transparent;
