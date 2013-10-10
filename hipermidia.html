@@ -43,10 +43,16 @@
         var hipermidiaMenu = $('.hipermidia-show');
 
         hipermidiaMenu.bind('click', function(foo) {
+          $('.appear').removeClass('appear');
           foo.preventDefault();
           foo.stopImmediatePropagation()
           var target = $(this).attr('data-target');
           $('#' + target).toggleClass('appear');
+
+          $(".scroll").customScrollbar({
+            skin: "default-skin",
+            hScroll: false
+          });
         });
 
         $(window).bind('click', function(ev) {
