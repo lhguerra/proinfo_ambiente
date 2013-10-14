@@ -112,13 +112,13 @@ p{
   padding-bottom: 30px;
 }
 .coloroverlaynb{
-  background: rgba(0, 103, 169, 0.5);
+  background: rgba(246, 157, 31, 0.5);
 }
 .coloroverlaypl{
-  background: rgba(4, 161, 148, 0.5);
+  background: rgba(238, 122, 67, 0.5);
 }
 .coloroverlayge{
-  background: rgba(246, 157, 31, 0.5);
+  background: rgba(15, 72, 104, 0.5);
 }
 .coloroverlayef{
   background: rgba(19, 160, 133, 0.5);
@@ -127,7 +127,7 @@ p{
   background: rgba(188, 58, 57, 0.5);
 }
 .coloroverlayav{
-  background: rgba(73, 117, 56, 0.5);
+  background: rgba(103, 55, 84, 0.5);
 }
 
 
@@ -347,28 +347,28 @@ p{
 /*-------------------BOTÃO START DOS NÚCLEOS-----------------*/
 
 .buttonstartnb{
-  background: #13a085;
+  background: #0067a9;
 }
 .buttonstartnb:hover{
-  background: #28b99a;
+  background: #1477ac;
 }
 .buttonstartpl{
-  background: #13a085;
+  background: #04a194;
 }
 .buttonstartpl:hover{
-  background: #28b99a;
+  background: #13a4a8;
 }
 .buttonstartge{
-  background: #13a085;
+  background: #f69d1f;
 }
 .buttonstartge:hover{
-  background: #28b99a;
+  background: #f9ae4d;
 }
 .buttonstartef{
-  background: #13a085;
+  background: #bc3a39;
 }
 .buttonstartef:hover{
-  background: #28b99a;
+  background: #d14342;
 }
 .buttonstartem{
   background: #13a085;
@@ -377,10 +377,10 @@ p{
   background: #28b99a;
 }
 .buttonstartav{
-  background: #13a085;
+  background: #497538;
 }
 .buttonstartav:hover{
-  background: #28b99a;
+  background: #578d44;
 }
 
 
@@ -425,9 +425,28 @@ p{
 }
 
 .titleline{
-  background: rgba(188, 58, 57, 0.8);
   padding: 10px;
 }
+
+.titlelinenb{
+  background: rgba(20, 119, 172, 0.8);
+}
+.titlelinepl{
+  background: rgba(4, 161, 148, 0.8);
+}
+.titlelinege{
+  background: rgba(246, 157, 31, 0.8);
+}
+.titlelineef{
+  background: rgba(188, 58, 57, 0.8);
+}
+.titlelineem{
+  background: rgba(19, 160, 133, 0.8);
+}
+.titlelineav{
+  background: rgba(73, 117, 56, 0.8);
+}
+
 .titleline .name{
   padding-top: 12px;
   padding-left: 6px;
@@ -508,7 +527,7 @@ p{
   font-size: 4em;
   font-family: "Open Sans", Sans-serif;
   font-weight: 700;
-  color: #FFF
+  color: #FFF;
 }
 .titlelinetopico{
   position: absolute;
@@ -578,37 +597,105 @@ p{
 /*-------- CORES DOS NUCLEOS - TOPICOS --------*/
 
 /*--- ENSINO MEDIO ---*/
-.titleem{
+.topicoem .title{
   background: rgba(40,185,154,0.5);
 }
-.numem{
+.topicoem .num{
   background: #13a085;
 }
-.em1{
+.topicoem .cor1{
   background: #3ca792;
 }
-.em2{
+.topicoem .cor2{
   background: #49b19d;
 }
-.em3{
+.topicoem .cor3{
   background: #58c4af;
 }
 
 /*--- ENSINO FUNDAMENTAL ---*/
-.titleef{
-  background: rgba(40,185,154,0.5);
+.topicoef .title{
+  background: rgba(188, 58, 57, 0.5);
 }
-.numef{
-  background: #13a085;
+.topicoef .num{
+  background: #bc3a39;
 }
-.ef1{
-  background: #3ca792;
+.topicoef .cor1{
+  background: #e26969;
 }
-.ef2{
-  background: #49b19d;
+.topicoef .cor2{
+  background: #e27a7a;
 }
-.ef3{
-  background: #58c4af;
+.topicoef .cor3{
+  background: #e89595;
+}
+
+/*--- NUCLEO DE BASE ---*/
+.topiconb .title{
+  background: rgba(20, 119, 172, 0.5);
+}
+.topiconb .num{
+  background: #1477ac;
+}
+.topiconb .cor1{
+  background: #3aa1ce;
+}
+.topiconb .cor2{
+  background: #5bb2d8;
+}
+.topiconb .cor3{
+  background: #73c1dd;
+}
+
+/*--- PLAC ---*/
+.topicopl .title{
+  background: rgba(4, 161, 148, 0.5);
+}
+.topicopl .num{
+  background: #04a194;
+}
+.topicopl .cor1{
+  background: #33cccc;
+}
+.topicopl .cor2{
+  background: #5bddda;
+}
+.topicopl .cor3{
+  background: #77e5e2;
+}
+
+/*--- GERAL ---*/
+.topicoge .title{
+  background: rgba(15, 72, 104, 0.5);
+}
+.topicoge .num{
+  background: #0f4868;
+}
+.topicoge .cor1{
+  background: #2f7a9b;
+}
+.topicoge .cor2{
+  background: #468faf;
+}
+.topicoge .cor3{
+  background: #57a3c4;
+}
+
+/*--- AVANÇADO ---*/
+.topicoav .title{
+  background: rgba(73, 117, 56, 0.5);
+}
+.topicoav .num{
+  background: #497538;
+}
+.topicoav .cor1{
+  background: #66a04e;
+}
+.topicoav .cor2{
+  background: #77b25f;
+}
+.topicoav .cor3{
+  background: #92c97b;
 }
 
 
