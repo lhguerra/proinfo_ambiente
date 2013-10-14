@@ -663,14 +663,13 @@ p{
     position: fixed;
     top: 0;
     bottom: 0;    
-    left: -50%; /* igual a largura */
+    /*left: -50%;  igual a largura */
     width: 50%;
     max-width: 991px;
     background-color: #D56A27;    
     transition: left 250ms;
     z-index: 5;
     padding: 30px;
-    overflow-x: hidden;
 }
 #saiba-mais.open {
     left: 0 !important;
@@ -680,25 +679,31 @@ p{
     position: fixed;
     top: 0;
     bottom: 0;    
-    right: -50%; /* igual a largura */
+    /*right: -50%;  igual a largura */
     width: 50%;
     max-width: 991px;
     background-color: #D56A27;    
     transition: right 250ms;
     z-index: 5;
     padding: 30px;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 #saiba-mais2.open {
     right: 0 !important;
+}
+
+.saiba-mais {
+  left: -50%;
+}
+
+.open {
+  left: 0 !important;
 }
 
 #glossario {
     position: fixed;
     top: 0;
     bottom: 0;    
-    left: -40%; /* igual a largura */
+    /*left: -40%;  igual a largura */
     width: 40%;
     max-width: 991px;  
     background-color: #45843E;    
@@ -716,7 +721,7 @@ p{
     position: fixed;
     top: 0;
     bottom: 0;    
-    right: -40%; /* igual a largura */
+    /*right: -40%;  igual a largura */
     width: 40%;
     max-width: 991px; 
     background-color: #45843E;    
