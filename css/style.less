@@ -86,7 +86,6 @@ header {
   border-bottom-color: @blue !important;
   box-shadow: 0 2px 3px 0 @blue;
   opacity: 0.9;
-  font-size: 13px;
 
   &:extend(.navbar, .navbar-default, .navbar-fixed-top);
 
@@ -621,22 +620,40 @@ footer {
         display: inline-block;
 
         a {
+          margin: 0 20px;
           line-height: 32px;
           display: block;
-          padding: 0 8px;
           color: white !important;
-
-          span {
-            margin-right: 4px;
-            color: white;
-
-            &:extend(.glyphicon);
-          }
+          position: relative;
 
           &:hover {
             text-decoration: none;
             background-color: rgba(255, 255, 255, 0.1);
           }
+          
+          span {
+            height: 32px;
+            width: 32px;
+            background-color: white;
+            position: absolute;
+            left: -36px;
+          }
+
+          // .icon-user {
+          //   background: url('../img/.png') no-repeat center;
+          // }
+
+          // .icon-list {
+          //   background: url('../img/.png') no-repeat center;
+          // }
+
+          // .icon-config {
+          //   background: url('../img/.png') no-repeat center;
+          // }
+
+          // .icon-question {
+          //   background: url('../img/.png') no-repeat center;
+          // }
         }
       }
     }

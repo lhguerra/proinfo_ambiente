@@ -1,9 +1,9 @@
-// function fire_evt_scrolls() {
-// 	$(".scroll").customScrollbar({
-// 		skin: "default-skin",
-// 		hScroll: false
-// 	});
-// }
+function fire_evt_scrolls() {
+	$(".scroll").customScrollbar({
+		skin: "default-skin",
+		hScroll: false
+	});
+}
 
 function toggleBar1()
 {
