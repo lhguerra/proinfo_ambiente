@@ -5,18 +5,6 @@ function fire_evt_scrolls() {
 	});
 }
 
-// function toggleBar() {
-//   $(".saiba-mais").toggleClass("open");
-
-//   var open = (".abrebarra");
-
-//   open.bind("click", function() {
-//     toggleBar();
-//   });  
-// };
-
-
-
 function toggleBar1()
 {
   document.getElementById('saiba-mais').classList.toggle("open");
