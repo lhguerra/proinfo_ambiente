@@ -127,6 +127,10 @@ input, select {
   background: url('../img/iocn-dark-content_email.png') no-repeat center;
 }
 
+.icon-trash {
+  background: url('../img/icon-dark-content_remove.png') no-repeat center;
+}
+
 // header styles
 header {
   background-color: @blue !important;
@@ -295,6 +299,14 @@ header {
   p {
     margin-top: 20px;
     padding: 4px;
+  }
+
+  a {
+
+    span {
+
+      &:extend(.icon);
+    }
   }
 }
 
