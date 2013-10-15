@@ -17,18 +17,22 @@
 * {
   color: @gray;
   font-weight: lighter;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   padding-top: 0 !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 a {
   color: @blue !important;
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
   line-height: 1.2em;
+  font-family: 'Roboto', sans-serif;
 }
 
 span {
@@ -37,21 +41,23 @@ span {
 
 h1 {
   margin-top: 0;
-
-  &:extend(.col-md-offset-1);
+  font-family: 'Roboto', sans-serif;
 }
 
 h2 {
+  font-family: 'Roboto', sans-serif;
 }
 
 h3 {
   padding: 0;
   margin: 0;
   line-height: 1.5em;
+  font-family: 'Roboto', sans-serif;
 }
 
 h4 {
   color: @gray;
+  font-family: 'Roboto', sans-serif;
 
   span {
     margin-left: 4px;
@@ -63,6 +69,7 @@ h5 {
   font-weight: bold;
   padding: 0;
   margin: 0;
+  font-family: 'Roboto', sans-serif;
 }
 
 input, select {
@@ -109,7 +116,7 @@ header {
             line-height: 64px !important;
             padding: 0 8px !important;
             display: block;
-            color: @gray !important;
+            color: white !important;
 
             &:hover {
               background-color: rgba(255, 255, 255, 0.1) !important;
@@ -162,12 +169,12 @@ header {
         margin: 0;
         line-height: 64px;
         float: left;
-        color: @gray !important;
+        color: white !important;
 
         img {
           height: 50px;
           max-width: 60px;
-          border-radius: 50%;
+          border-radius: @radius;
         }
       }
 
@@ -613,22 +620,40 @@ footer {
         display: inline-block;
 
         a {
+          margin: 0 20px;
           line-height: 32px;
           display: block;
-          padding: 0 8px;
-          color: @gray !important;
-
-          span {
-            margin-right: 4px;
-            color: @gray;
-
-            &:extend(.glyphicon);
-          }
+          color: white !important;
+          position: relative;
 
           &:hover {
             text-decoration: none;
             background-color: rgba(255, 255, 255, 0.1);
           }
+          
+          span {
+            height: 32px;
+            width: 32px;
+            background-color: white;
+            position: absolute;
+            left: -36px;
+          }
+
+          // .icon-user {
+          //   background: url('../img/.png') no-repeat center;
+          // }
+
+          // .icon-list {
+          //   background: url('../img/.png') no-repeat center;
+          // }
+
+          // .icon-config {
+          //   background: url('../img/.png') no-repeat center;
+          // }
+
+          // .icon-question {
+          //   background: url('../img/.png') no-repeat center;
+          // }
         }
       }
     }
