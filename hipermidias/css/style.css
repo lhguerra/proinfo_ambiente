@@ -111,6 +111,18 @@ p{
 .coloroverlay{
   padding-bottom: 30px;
 }
+
+/*-------- CORES DOS NUCLEOS - COR DE CAPA --------*/
+
+/* 
+  nb = Núcles de Base
+  pl = PLAC
+  ge = Geral
+  ef = Ensino Fundamental
+  em = Ensino Médio
+  av = Núcleos Avançados
+*/
+
 .coloroverlaynb{
   background: rgba(246, 157, 31, 0.5);
 }
@@ -130,7 +142,7 @@ p{
   background: rgba(103, 55, 84, 0.5);
 }
 
-
+/*--------------------------------------------------*/
 
 
 
@@ -359,6 +371,15 @@ p{
 
 /*-------------------BOTÃO START DOS NÚCLEOS-----------------*/
 
+/* 
+  nb = Núcles de Base
+  pl = PLAC
+  ge = Geral
+  ef = Ensino Fundamental
+  em = Ensino Médio
+  av = Núcleos Avançados
+*/
+
 .buttonstartnb{
   background: #0067a9;
 }
@@ -441,6 +462,17 @@ p{
   padding: 10px;
 }
 
+/*-------- CORES DOS NUCLEOS - COR DOS TÍTULOS DE CENÁRIOS --------*/
+
+/* 
+  nb = Núcles de Base
+  pl = PLAC
+  ge = Geral
+  ef = Ensino Fundamental
+  em = Ensino Médio
+  av = Núcleos Avançados
+*/
+
 .titlelinenb{
   background: rgba(20, 119, 172, 0.8);
 }
@@ -459,6 +491,8 @@ p{
 .titlelineav{
   background: rgba(73, 117, 56, 0.8);
 }
+
+/*-----------------------------------------*/
 
 .titleline .name{
   padding-top: 12px;
@@ -609,6 +643,15 @@ p{
 
 /*-------- CORES DOS NUCLEOS - TOPICOS --------*/
 
+/* 
+  nb = Núcles de Base
+  pl = PLAC
+  ge = Geral
+  ef = Ensino Fundamental
+  em = Ensino Médio
+  av = Núcleos Avançados
+*/
+
 /*--- ENSINO MEDIO ---*/
 .topicoem .title{
   background: rgba(40,185,154,0.5);
@@ -617,13 +660,13 @@ p{
   background: #13a085;
 }
 .topicoem .cor1{
-  background: #3ca792;
+  background: #44b29c;
 }
 .topicoem .cor2{
-  background: #49b19d;
+  background: #5ebfac;
 }
 .topicoem .cor3{
-  background: #58c4af;
+  background: #71ccba;
 }
 
 /*--- ENSINO FUNDAMENTAL ---*/
@@ -685,13 +728,13 @@ p{
   background: #0f4868;
 }
 .topicoge .cor1{
-  background: #2f7a9b;
+  background: #3c96b5;
 }
 .topicoge .cor2{
-  background: #468faf;
+  background: #4fa9c1;
 }
 .topicoge .cor3{
-  background: #57a3c4;
+  background: #6ab7cc;
 }
 
 /*--- AVANÇADO ---*/
