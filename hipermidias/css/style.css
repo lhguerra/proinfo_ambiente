@@ -232,6 +232,19 @@ p{
   .equipe div{
     line-height: 1.5em !important;
   }
+  .equipe{
+    text-align: center !important;
+  }
+  .equipewrapper{
+    height: 35px !important;
+    max-width: 250px !important;
+    padding-top: 3px !important;
+
+    transition: max-width 0.5s;
+  }
+  .equipeicon{
+    vertical-align: -28% !important;
+  }
 
   .equipeimgs{
     display: none;
@@ -721,6 +734,18 @@ p{
   padding: 20px;
   overflow: hidden;
 }
+.equipewrapper{
+  display: block;
+  background: #ccc;
+  height: 30px;
+  max-width: 190px;
+  margin: auto;
+  transition: max-width 0.5s;
+}
+.equipeicon{
+  vertical-align:-45%;
+}
+
 .equipe div{
   margin-top: 15px;
   font-family: "Roboto";
@@ -745,6 +770,13 @@ p{
 }
 
 /*-----------------SIDEBAR-----------------*/
+.scroll{
+  height: 100%;
+}
+
+.contbar{
+  margin: 30px;
+}
 
 #saiba-mais {
     position: fixed;
@@ -756,9 +788,8 @@ p{
     background-color: #D56A27;    
     transition: left 250ms;
     z-index: 5;
-    padding: 30px;
-    overflow-x: hidden;
 }
+
 #saiba-mais.open {
     left: 0 !important;
 }
@@ -773,9 +804,6 @@ p{
     background-color: #D56A27;    
     transition: right 250ms;
     z-index: 5;
-    padding: 30px;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 #saiba-mais2.open {
     right: 0 !important;
@@ -787,13 +815,10 @@ p{
     bottom: 0;    
     left: -40%; /* igual a largura */
     width: 40%;
-    max-width: 991px;  
+    max-width: 991px;
     background-color: #45843E;    
     transition: left 250ms;
-    z-index: 5;
-    padding: 30px;
-    overflow-y: auto;
-    overflow-x: hidden;
+    z-index: 6;
 }
 #glossario.open {
     left: 0 !important;
@@ -805,13 +830,10 @@ p{
     bottom: 0;    
     right: -40%; /* igual a largura */
     width: 40%;
-    max-width: 991px; 
+    max-width: 991px;
     background-color: #45843E;    
     transition: right 250ms;
     z-index: 6;
-    padding: 30px;
-    overflow-y: auto;
-    overflow-x: hidden;
 }
 #glossario2.open {
     right: 0 !important;
@@ -826,9 +848,7 @@ p{
   color: #FFF;
   cursor: pointer;
 }
-.contbar .row{
-  padding: 0 10px;
-}
+
 .contbar h3{
   color: #FFF;
   font-family: 'Open Sans', arial, Sans-serif;
@@ -847,6 +867,18 @@ p{
 .contbar p{
   color: #FFF;
   text-align: justify;
+}
+.contbar .linksaibamais{
+  color: #EFAE8E;
+}
+.contbar .linksaibamais:hover{
+  color: #F4BFA8;
+}
+.contbar .linkglossario{
+  color: #97D18F;
+}
+.contbar .linkglossario:hover{
+  color: #B3DDAB;
 }
 /* -------------------------------------*/
 
