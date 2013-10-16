@@ -2,6 +2,10 @@
 @import (less) "bootstrap.css";
 @import (less) "non-responsive.css";
 
+// font variables
+@font-size: 14px;
+@font-family: 'Roboto', sans-serif;
+
 // color variables
 @blue: #3B96D2;
 @yellow: #F59C1F;
@@ -17,47 +21,51 @@
 * {
   color: @gray;
   font-weight: lighter;
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family;
 }
 
 body {
   padding-top: 0 !important;
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family;
 }
 
 a {
   color: @blue !important;
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family;
 }
 
 p {
   line-height: 1.2em;
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family;
 }
 
 span {
-  font-size: 14px;
+  font-size: @font-size;
 }
 
 h1 {
   margin-top: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family;
+  font-size: (@font-size * 2.5);
 }
 
 h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family;
+  font-size: (@font-size * 2);
 }
 
 h3 {
   padding: 0;
   margin: 0;
   line-height: 1.5em;
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family;
+  font-size: (@font-size * 1.5);
 }
 
 h4 {
   color: @gray;
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family;
+  font-size: (@font-size * 1.2);
 
   span {
     margin-left: 4px;
@@ -69,7 +77,7 @@ h5 {
   font-weight: bold;
   padding: 0;
   margin: 0;
-  font-family: 'Roboto', sans-serif;
+  font-family: @font-family;
 }
 
 input, select {
@@ -78,6 +86,49 @@ input, select {
 
 .clear {
   clear: both;
+}
+
+// icons
+.icon {
+  width: 32px;
+  height: 32px;
+  display: block;
+}
+
+.icon-user {
+  background: url('../img/icon-light-social_person.png') no-repeat center;
+}
+
+.icon-content {
+  background: url('../img/icon-light-content_event.png') no-repeat center;
+}
+
+.icon-config {
+  background: url('../img/icon-light-content_edit.png') no-repeat center;
+}
+
+.icon-question {
+  background: url('../img/icon-light-action_help.png') no-repeat center;
+}
+
+.icon-favorite {
+  background: url('../img/icon-dark-rating_favorite.png') no-repeat center;
+}
+
+.icon-search {
+  background: url('../img/icon-dark-action_search.png') no-repeat center;
+}
+
+.icon-menu {
+  background: url('../img/icon-dark-collections_view_as_list.png') no-repeat center;
+}
+
+.icon-comment {
+  background: url('../img/iocn-dark-content_email.png') no-repeat center;
+}
+
+.icon-trash {
+  background: url('../img/icon-dark-content_remove.png') no-repeat center;
 }
 
 // header styles
@@ -248,6 +299,14 @@ header {
   p {
     margin-top: 20px;
     padding: 4px;
+  }
+
+  a {
+
+    span {
+
+      &:extend(.icon);
+    }
   }
 }
 
@@ -438,11 +497,35 @@ header {
         padding: 1px 8px;
         display: block;
         background-color: @white;
-        border-bottom: 1px solid (@beige - #111);
+        border-bottom: 1px solid (@beige - #333);
 
         &:hover {
           background-color: transparent;
           text-decoration: none;
+        }
+      }
+
+      table {
+        width: 100%;
+
+        tr {
+
+          td {
+
+            h3 {
+              padding-right: 4px;
+            }
+
+            &:last-child {
+              width: 100%;
+
+              span {
+                height: 1px;
+                background-color: (@beige - #333);
+                display: block;
+              }
+            }
+          }
         }
       }
     }
@@ -475,7 +558,7 @@ header {
   }
 
   aside {
-    width: 30px;
+    width: 32px;
     position: fixed;
     left: 50%;
     margin-left: 480px;
@@ -500,8 +583,8 @@ header {
           }
 
           span {
-            padding: 4px;
-            margin: 4px;
+
+            &:extend(.icon);
           }
         }
 
@@ -518,12 +601,13 @@ header {
           right: 30px;
           top: 0;
           display: none;
+          box-shadow: @shadow;
 
           li {
             padding: 0;
             background-color: @white;
-            border-bottom: 1px solid (@beige - #111);
-            border-right: 1px solid (@beige - #111);
+            border-bottom: 1px solid (@beige - #333);
+            border-right: 1px solid (@beige - #333);
             width: 200px;
             text-align: right;
             position: relative;
@@ -620,11 +704,12 @@ footer {
         display: inline-block;
 
         a {
-          margin: 0 20px;
+          margin: 0 8px;
           line-height: 32px;
           display: block;
           color: white !important;
           position: relative;
+          padding: 0 4px 0 32px;
 
           &:hover {
             text-decoration: none;
@@ -632,28 +717,11 @@ footer {
           }
           
           span {
-            height: 32px;
-            width: 32px;
-            background-color: white;
             position: absolute;
-            left: -36px;
+            left: 0;
+
+            &:extend(.icon);
           }
-
-          // .icon-user {
-          //   background: url('../img/.png') no-repeat center;
-          // }
-
-          // .icon-list {
-          //   background: url('../img/.png') no-repeat center;
-          // }
-
-          // .icon-config {
-          //   background: url('../img/.png') no-repeat center;
-          // }
-
-          // .icon-question {
-          //   background: url('../img/.png') no-repeat center;
-          // }
         }
       }
     }
