@@ -5,7 +5,7 @@
 <head>
   <title>Tópico 1</title>
 
-  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
 <!--   <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
@@ -138,7 +138,19 @@
 
       <div class="row migalha">
         <div class="col-md-12">
-          <p>
+          <style type="text/css">
+            .breadcrumb > li + li:before {
+              content: "\02C3";
+            }
+          </style>
+          <ol class="breadcrumb" style="background-color: inherit; padding: 8px 0;">
+            <li><a href="index.html">História Ensino Médio</a></li>
+            <li><a href="cenarios.html">Escolha de Cenários</a></li>
+            <li><a href="cenariosesc.html">Cenário 1</a></li>
+            <li><a href="cenariosesc.html">Escolha de Tópicos</a></li>
+            <li class="active">Tópico 1</li>
+          </ol>
+<!--           <p>
             <a href="index.html">História Ensino Médio</a>
             <img src="media/imgs/arrow.png">
             <a href="cenarios.html">Escolha de Cenários</a>
@@ -149,7 +161,7 @@
             <img src="media/imgs/arrow.png">
             <b>Tópico 1</b>
           </p>
-        </div>
+ -->        </div>
       </div>
 
       <div class="row conthip">
