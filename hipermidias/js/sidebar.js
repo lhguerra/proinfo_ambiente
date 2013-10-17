@@ -1,54 +1,30 @@
-function fire_evt_scrolls() {
-	$(".scroll").customScrollbar({
-		skin: "default-skin",
-		hScroll: false
-	});
-}
+$(document).ready(function(){
+  function fire_evt_scrolls() {
+    $(".scroll").customScrollbar({
+      skin: "default-skin",
+      hScroll: false,
+      updateOnWindowResize:true
+    });
+  }
 
-function toggleBar1()
-{
-  document.getElementById('saiba-mais').classList.toggle("open");
+  $('.sidebar-open').on('click', function(ev) {
+    ev.preventDefault();
+    var target = $(this).attr('data-sidebar-target');
+    if (target == undefined || target == '') {
+      window.alert('missing target'); return;
+    }
+    $(target).addClass('open');
+    fire_evt_scrolls();
+  });
+
+  $('.sidebar-close').on ('click', function(ev){
+    ev.preventDefault();
+    var target = $(this).attr('data-sidebar-target');
+    if (target == undefined || target == '') {
+      window.alert('missing target'); return;
+    }
+    $(target).removeClass('open');
+  });
+
   fire_evt_scrolls();
-}
-
-var abridoresDaBarra = document.getElementsByClassName("abrebarra1");
-
-for(var i = 0; i < abridoresDaBarra.length; i++) {
-  abridoresDaBarra[i].onclick = toggleBar1;
-}
-
-function toggleBar2()
-{
-  document.getElementById('glossario').classList.toggle("open");
-  fire_evt_scrolls();
-}
-
-var abridoresDaBarra = document.getElementsByClassName("abrebarra2");
-
-for(var i = 0; i < abridoresDaBarra.length; i++) {
-  abridoresDaBarra[i].onclick = toggleBar2;
-}
-
-function toggleBar3()
-{
-  document.getElementById('saiba-mais2').classList.toggle("open");
-  fire_evt_scrolls();
-}
-
-var abridoresDaBarra = document.getElementsByClassName("abrebarra3");
-
-for(var i = 0; i < abridoresDaBarra.length; i++) {
-  abridoresDaBarra[i].onclick = toggleBar3;
-}
-
-function toggleBar4()
-{
-  document.getElementById('glossario2').classList.toggle("open");
-  fire_evt_scrolls();
-}
-
-var abridoresDaBarra = document.getElementsByClassName("abrebarra4");
-
-for(var i = 0; i < abridoresDaBarra.length; i++) {
-  abridoresDaBarra[i].onclick = toggleBar4;
-}
+});
