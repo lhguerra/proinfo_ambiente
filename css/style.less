@@ -359,6 +359,7 @@ header {
   border-radius: @radius;
   background-color: @white;
   position: relative;
+  box-shadow: @shadow;
 
   h3 {
     padding: 0 8px;
@@ -374,11 +375,44 @@ header {
       box-shadow: @shadow;
 
       img {
+        background-color: (@beige - #333);
+
         &:extend(.col-md-4);
       }
 
       div {
         &:extend(.col-md-20);
+
+        h5 {
+          position: relative;
+
+          &:after {
+            content: attr(data-time);
+            position: absolute;
+          }
+        }
+
+        p {
+          margin: 0 !important;
+        }
+      }
+
+      span {
+        width: 20px;
+        height: 20px;
+        background-size: cover;
+        margin-right: 20px;
+        float: right;
+
+        &:extend(.icon);
+
+        &:after {
+          content: attr(data-value);
+          position: absolute;
+          top: 0;
+          left: 20px;
+          font-size: (@font-size * 0.9);
+        }
       }
     }
   }
@@ -602,11 +636,17 @@ header {
 .hipermidia {
 
   &:before {
-    content: "span";
+    content: url(../img/icon-dark-big-navigation_previous_item.png);
     position: fixed;
     top: 300px;
+    left: 0;
+  }
 
-    &:extend(.glyphicon, .glyphicon-step-backward);
+  &:after {
+    content: url(../img/icon-dark-big-navigation_next_item.png);
+    position: fixed;
+    top: 300px;
+    right: 0;
   }
 
   aside {
@@ -623,6 +663,7 @@ header {
       list-style: none;
       padding: 0;
       margin: 0;
+      position: static;
 
       li {
         position: relative;
@@ -642,6 +683,13 @@ header {
 
         article {
           width: 350px;
+
+          .comment-container {
+
+            .one-comment {
+              width: 325px;
+            }
+          }
         }
 
         .appear {
@@ -706,6 +754,31 @@ header {
       .nota-info {
         margin: 0;
         text-align: right;
+      }
+
+      article {
+
+        .modal-info {
+
+          table {
+            width: 100%;
+
+            td {
+              width: 50%;
+
+              .progress {
+                margin-top: 8px;
+              }
+            }
+          }
+        }
+
+        div {
+
+          p {
+            margin: 16px 0;
+          }
+        }
       }
     }
   }
