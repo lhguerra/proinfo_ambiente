@@ -21,7 +21,7 @@
 * {
   color: @gray;
   font-weight: lighter;
-  font-family: @font-family;
+  font-family: @font-family !important;
 }
 
 body {
@@ -337,6 +337,7 @@ header {
   padding: 0;
   background-color: (@beige - #111);
   border-radius: @radius;
+  box-shadow: @shadow;
 
   &:extend(.col-md-6);
 
@@ -389,6 +390,12 @@ header {
           &:after {
             content: attr(data-time);
             position: absolute;
+            // top: 0;
+            // left: 0;
+            display: inline-block;
+            font-weight: 100;
+            font-size: (@font-size * 0.9);
+            margin-left: 8px;
           }
         }
 
@@ -415,6 +422,14 @@ header {
         }
       }
     }
+
+    .sub-comment {
+      border-top: 1px solid (@beige - #333);
+      padding-top: 8px;
+      width: 100% !important;
+
+      &:extend(.one-comment);
+    }
   }
 
   .type-comment {
@@ -424,12 +439,46 @@ header {
 
     .comment-thumb {
        width: 15%;
+       float: left;
+    }
+
+    select {
+      float: right;
+      padding: 0;
     }
 
     .input-group {
       width: 80%;
       float: right;
-      margin-top: 20px;
+      margin-top: 4px;
+    }
+  }
+
+  .comment-header {
+    padding: 0 4px;
+
+    table {
+      width: 100%;
+
+      tr {
+
+        td {
+
+          h6 {
+            padding-right: 4px;
+          }
+
+          &:last-child {
+            width: 100%;
+
+            span {
+              height: 1px;
+              background-color: (@beige - #333);
+              display: block;
+            }
+          }
+        }
+      }
     }
   }
 }

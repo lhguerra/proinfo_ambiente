@@ -230,20 +230,32 @@
         </article>
         <article class="col-md-offset-1 col-md-9 comment-box">
           <h3>Comentarios sobre o curso</h3>
-          <div class="type-comment">
-              <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
-              <div class="input-group">
-                <input placeholder="deixe seu comentario" type="text" class="form-control">
-                <span class="input-group-btn">
-                  <button class="btn btn-default" type="button">Comentar</button>
-                </span>
-              </div>
+          <div class="type-comment row">
+            <img class="comment-thumb" src="img/home-picture.jpg" />
+            <select name="Nucleo Relacionado" required>
+              <option value="nucleo-de-base-1">Todos os Comentarios</option>
+              <option value="nucleo-de-base-2">Meus Comentarios</option>
+            </select>
+            <div class="input-group">
+              <input placeholder="deixe seu comentario" type="text" class="form-control">
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Comentar</button>
+              </span>
             </div>
+          </div>
           <div class="comment-container scroll">
+            <div class="comment-header">
+              <table>
+                <tr>
+                  <td><h6>Neste&nbsp;Topico</h6></td>
+                  <td><span></span></td>
+                </tr>
+              </table>
+            </div>
             <div class="row one-comment">
               <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
               <div>
-                <h5>Joao da Silva</h5>
+                <h5 data-time="20/09 às 16h">Joao da Silva</h5>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
               <a href="#"><span class="icon-like" data-value="26"></span></a>
@@ -252,7 +264,34 @@
             <div class="row one-comment">
               <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
               <div>
-                <h5>Joao da Silva</h5>
+                <h5 data-time="20/09 às 16h">Joao da Silva</h5>
+                <p>Lorem ipsum dolor sit amet.</p>
+              </div>
+              <a href="#"><span class="icon-like" data-value="26"></span></a>
+              <a href="#"><span class="icon-comment" data-value="26"></span></a>
+
+              <div class="row sub-comment">
+                <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
+                <div>
+                  <h5 data-time="20/09 às 16h">Joao da Silva</h5>
+                  <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <a href="#"><span class="icon-like" data-value="26"></span></a>
+                <a href="#"><span class="icon-comment" data-value="26"></span></a>
+              </div>
+            </div>
+            <div class="comment-header">
+              <table>
+                <tr>
+                  <td><h6>Todos&nbsp;os&nbsp;comentarios&nbsp;neste&nbsp;nucleo</h6></td>
+                  <td><span></span></td>
+                </tr>
+              </table>
+            </div>
+            <div class="row one-comment">
+              <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
+              <div>
+                <h5 data-time="20/09 às 16h">Joao da Silva</h5>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
               <a href="#"><span class="icon-like" data-value="26"></span></a>
@@ -261,7 +300,7 @@
             <div class="row one-comment">
               <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
               <div>
-                <h5>Joao da Silva</h5>
+                <h5 data-time="20/09 às 16h">Joao da Silva</h5>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
               <a href="#"><span class="icon-like" data-value="26"></span></a>
@@ -270,7 +309,7 @@
             <div class="row one-comment">
               <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
               <div>
-                <h5>Joao da Silva</h5>
+                <h5 data-time="20/09 às 16h">Joao da Silva</h5>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
               <a href="#"><span class="icon-like" data-value="26"></span></a>
@@ -279,7 +318,7 @@
             <div class="row one-comment">
               <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
               <div>
-                <h5>Joao da Silva</h5>
+                <h5 data-time="20/09 às 16h">Joao da Silva</h5>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
               <a href="#"><span class="icon-like" data-value="26"></span></a>
@@ -288,7 +327,7 @@
             <div class="row one-comment">
               <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
               <div>
-                <h5>Joao da Silva</h5>
+                <h5 data-time="20/09 às 16h">Joao da Silva</h5>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
               <a href="#"><span class="icon-like" data-value="26"></span></a>
@@ -297,16 +336,7 @@
             <div class="row one-comment">
               <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
               <div>
-                <h5>Joao da Silva</h5>
-                <p>Lorem ipsum dolor sit amet.</p>
-              </div>
-              <a href="#"><span class="icon-like" data-value="26"></span></a>
-              <a href="#"><span class="icon-comment" data-value="26"></span></a>
-            </div>
-            <div class="row one-comment">
-              <img class="comment-thumb" src="img/icon-dark-big-social_person.png" />
-              <div>
-                <h5>Joao da Silva</h5>
+                <h5 data-time="20/09 às 16h">Joao da Silva</h5>
                 <p>Lorem ipsum dolor sit amet.</p>
               </div>
               <a href="#"><span class="icon-like" data-value="26"></span></a>
