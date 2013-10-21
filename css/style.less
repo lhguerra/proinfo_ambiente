@@ -22,6 +22,7 @@
   color: @gray;
   font-weight: lighter;
   font-family: @font-family !important;
+  font-size: 14px !default;
 }
 
 body {
@@ -32,6 +33,11 @@ body {
 a {
   color: @blue !important;
   font-family: @font-family;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 p {
@@ -46,14 +52,14 @@ span {
 h1 {
   margin-top: 0;
   font-family: @font-family;
-  font-size: (@font-size * 2.5);
+  font-size: 2.5em;
 
   &:extend(.col-md-offset-1);
 }
 
 h2 {
   font-family: @font-family;
-  font-size: (@font-size * 2);
+  font-size: 2em;
 }
 
 h3 {
@@ -61,13 +67,13 @@ h3 {
   margin: 0;
   line-height: 1.5em;
   font-family: @font-family;
-  font-size: (@font-size * 1.5);
+  font-size: 1.5em;
 }
 
 h4 {
   color: @gray;
   font-family: @font-family;
-  font-size: (@font-size * 1.2);
+  font-size: 1.2em;
 
   span {
     margin-left: 4px;
@@ -141,6 +147,7 @@ header {
   border-bottom-color: @blue !important;
   box-shadow: 0 2px 3px 0 @blue;
   opacity: 0.9;
+  font-size: @font-size !important;
 
   &:extend(.navbar, .navbar-default, .navbar-fixed-top);
 
@@ -868,6 +875,7 @@ footer {
   position: fixed;
   bottom: 0;
   opacity: 0.9;
+  font-size: @font-size !important;
 
   &:hover {
     opacity: 1;
@@ -879,8 +887,7 @@ footer {
 
     ul {
       list-style: none;
-      width: 100%;
-      text-align: right;
+      width: 50%;
 
       li {
         display: inline-block;
@@ -891,6 +898,27 @@ footer {
           display: block;
           color: white !important;
           position: relative;
+        }
+      }
+    }
+
+    #accessibility {
+      float: left;
+
+      li {
+
+        a {
+          font-weight: bold;
+        }
+      }
+    }
+
+    #footer-menu {
+      float: right;
+
+      li {
+
+        a {
           padding: 0 4px 0 32px;
 
           &:hover {

@@ -46,6 +46,36 @@
       });
     </script>
 
+    <script type="text/javascript">
+      $(document).ready(function() {
+   
+        // aumentando a fonte
+        $(".inc-font").click(function () {
+          var size = $("body").css('font-size');
+           
+          size = size.replace('px', '');
+          size = parseInt(size) + 2;
+           
+          $("body").animate({'font-size' : size + 'px'});
+        });
+         
+        //diminuindo a fonte
+        $(".dec-font").click(function () {
+          var size = $("body").css('font-size');
+           
+          size = size.replace('px', '');
+          size = parseInt(size) - 2;
+           
+          $("body").animate({'font-size' : size + 'px'});
+        });
+         
+        // resetando a fonte
+        $(".res-font").click(function () {   
+          $("body").animate({'font-size' : '14px'});
+        });
+      });
+    </script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
@@ -395,7 +425,18 @@
 
     <footer>
       <div class="container">
-        <ul>
+        <ul id="accessibility">
+          <li class="inc-font" title="Aumentar Fonte">
+            <a href="#">A+</a>
+          </li>
+          <li class="res-font" title="Tamanho Normal da Fonte">
+            <a href="#">A</a>
+          </li>
+          <li class="dec-font" title="Diminuir Fonte">
+            <a href="#">A-</a>
+          </li>
+        </ul>
+        <ul id="footer-menu">
           <li>
             <a href="meu-perfil.html"><span class="icon-user"></span>Perfil</a>
           </li>
