@@ -25,9 +25,15 @@
   font-size: 14px !default;
 }
 
+html {
+  height: 100%;
+}
+
 body {
+  height: 100%;
   padding-top: 0 !important;
   font-family: @font-family;
+  background: url('../img/polaroid.png') fixed;
 }
 
 a {
@@ -53,6 +59,7 @@ h1 {
   margin-top: 0;
   font-family: @font-family;
   font-size: 2.5em;
+  font-weight: 300;
 
   &:extend(.col-md-offset-1);
 }
@@ -60,6 +67,7 @@ h1 {
 h2 {
   font-family: @font-family;
   font-size: 2em;
+  font-weight: 300;
 }
 
 h3 {
@@ -68,12 +76,14 @@ h3 {
   line-height: 1.5em;
   font-family: @font-family;
   font-size: 1.5em;
+  font-weight: 300;
 }
 
 h4 {
   color: @gray;
   font-family: @font-family;
   font-size: 1.2em;
+  font-weight: 300;
 
   span {
     margin-left: 4px;
@@ -109,44 +119,49 @@ input, select {
   display: block;
   float: left;
   position: relative;
+  background-image: url('../img/sprit.png');
 }
 
-.icon-user {background: url('../img/icon-light-social_person.png') no-repeat center;}
+.icon-user {background-position: 0 0;}
 
-.icon-content {background: url('../img/icon-light-content_event.png') no-repeat center;}
+.icon-content {background-position: -64px 0;}
 
-.icon-config {background: url('../img/icon-light-content_edit.png') no-repeat center;}
+.icon-config {background-position: -96px 0px;}
 
-  .icon-config-b {background: url('../img/icon-dark-content_edit.png') no-repeat center;}
+  .icon-config-b {background-position: 0 0;}
 
-.icon-question {background: url('../img/icon-light-action_help.png') no-repeat center;}
+.icon-question {background-position: -32px 0px;}
 
-.icon-favorite {background: url('../img/icon-dark-rating_favorite.png') no-repeat center;}
+.icon-favorite {background-position: -96px -32px;}
 
-.icon-search {background: url('../img/icon-dark-action_search.png') no-repeat center;}
+  .icon-favorite-20 {background-position: 0 -64px;}
 
-.icon-menu {background: url('../img/icon-dark-collections_view_as_list.png') no-repeat center;}
+.icon-search {background-position: -64px -32px;}
 
-.icon-comment {background: url('../img/icon-dark-social_chat.png') no-repeat center;}
+.icon-menu {background-position: 0 -32px;}
 
-.icon-trash {background: url('../img/icon-dark-content_remove.png') no-repeat center;}
+.icon-comment {background-position: -32px -32px;}
 
-.icon-to-read {background: url('../img/icon-dark-content-paste.png') no-repeat center;}
+  .icon-comment-20 {background-position: -40px -64px;}
 
-.icon-read {background: url('../img/icon-dark-content_copy.png') no-repeat center;}
+.icon-trash {background-position: 0 0;}
 
-.icon-calendar {background: url('../img/icon-dark-collections_go_to_today.png') no-repeat center;}
+.icon-to-read {background-position: 0 0;}
 
-.icon-like {background: url('../img/icon-dark-rating_good.png') no-repeat center;}
+.icon-read {background-position: 0 0;}
 
-.icon-ok {background: url('../img/icon-dark-navigation_accept.png') no-repeat center;}
+.icon-calendar {background-position: -64px 0px;}
+
+.icon-like {background-position: -20px -64px;}
+
+.icon-ok {background-position: -60px -64px;}
 
 // header styles
 header {
   background-color: @blue !important;
   border-bottom-color: @blue !important;
   box-shadow: 0 2px 3px 0 @blue;
-  opacity: 0.9;
+  opacity: 0.95;
   font-size: @font-size !important;
 
   &:extend(.navbar, .navbar-default, .navbar-fixed-top);
@@ -220,35 +235,31 @@ header {
 
     #user {
       height: 64px;
-      width: 160px;
+      width: 180px;
       float: right;
       position: absolute;
       right: 0;
       top: 0;
 
-      a {
-        padding: 0 !important;
-        margin: 0;
-        line-height: 64px;
+      img {
         float: left;
-        color: white !important;
-
-        img {
-          height: 50px;
-          max-width: 60px;
-          border-radius: @radius;
-          background-color: (@blue - #222);
-        }
+        width: 30%;
+        height: auto;
       }
 
-      div {
-        float: left;
-        padding-left: 8px;
-        padding-top: 8px;
+      p {
+        line-height: 48px;
+        float: right;
+        width: 70%;
+        margin: 0;
+      }
 
-        a {
-          line-height: 20px;
-        }
+      article {
+        position: absolute;
+      }
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.1);
       }
     }
   }
@@ -256,9 +267,10 @@ header {
 
 // general content styles
 #content {
-  background-color: (@beige);
+  min-height: 100%;
+  background-color: rgba(237, 233, 220, 0.6);
   padding-top: 96px;
-  padding-bottom: 48px;
+  padding-bottom: 64px;
 
   &:extend(.container);
 }
@@ -274,14 +286,13 @@ header {
   &:extend(.col-md-5);
 
   .modal-info {
-    width: 55%;
+    width: 50%;
     float: right;
 
     span {
       float: none;
       width: 20px;
       height: 20px;
-      background-size: cover;
 
       &:extend(.icon);
 
@@ -302,7 +313,7 @@ header {
   }
 
   .modal-thumb {
-        width: 30%;
+        width: 45%;
         border-radius: @radius;
         box-shadow: @shadow;
   }
@@ -318,6 +329,7 @@ header {
 
   h4 {
     margin-bottom: 0;
+    font-weight: 100;
   }
 
   .date {
@@ -342,7 +354,7 @@ header {
 
 .vertical-box {
   padding: 0;
-  background-color: (@beige - #111);
+  background-color: white;
   border-radius: @radius;
   box-shadow: @shadow;
 
@@ -414,7 +426,6 @@ header {
       span {
         width: 20px;
         height: 20px;
-        background-size: cover;
         margin-right: 20px;
         float: right;
 
@@ -874,7 +885,7 @@ footer {
   box-shadow: 0 -2px 3px 0 @blue;
   position: fixed;
   bottom: 0;
-  opacity: 0.9;
+  opacity: 0.95;
   font-size: @font-size !important;
 
   &:hover {
@@ -915,6 +926,7 @@ footer {
 
     #footer-menu {
       float: right;
+      text-align: right;
 
       li {
 
