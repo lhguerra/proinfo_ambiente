@@ -80,6 +80,17 @@
         });
       });
     </script>
+
+    <script type="text/javascript">
+      $(function() {
+        var profileMenu = $('#user'),
+            profileBox = $('#user-modal');
+          
+        profileMenu.bind('click', function() {
+          profileBox.toggleClass('appear');
+        });
+      });
+    </script>
   </head>
 
   <body>
@@ -98,7 +109,7 @@
               <ul>
                 <li><a href="#">Progresso</a></li>
                 <li><a href="favoritos.html">Favoritos</a></li>
-                <li><a href="mural.html">Mural</a></li>
+                <li><a href="#">Mural</a></li>
               </ul>
             </li>
             <li>
@@ -116,14 +127,40 @@
           </ul>
         </nav><!--/.nav-collapse -->
         <div id="user">
-          <a href="#">
-            <img alt="" src="img/icon-dark-big-social_person.png">
-          </a>
-          <div>
-            <a href="#">Jovisclédisom</a><br />
-            <a href="#">Sair</a>
-          </div>
+          <img alt="" src="img/icon-dark-big-social_person.png">
+          <p>
+            Jovisclédisom
+          </p>
+
+          <article id="user-modal">
+            <img src="img/icon-dark-big-social_person.png" />
+            <ul>
+              <li>
+                <h3>Jovisclédsom</h3>
+              </li>
+              <li>
+                <span class="icon-read" data-value="2"></span>
+                <span class="icon-to-read" data-value="3"></span>
+                <span class="icon-calendar" data-value="15"></span>
+                <span class="icon-like" data-value="4"></span>
+              </li>
+            </ul>
+            <a href="">Meu Perfil</a>
+            <a href="">Configuracoes</a>
+          </article>
         </div>
+
+        <ul id="accessibility">
+          <li class="inc-font" title="Aumentar Fonte">
+            <a href="#">A+</a>
+          </li>
+          <li class="res-font" title="Tamanho Normal da Fonte">
+            <a href="#">A</a>
+          </li>
+          <li class="dec-font" title="Diminuir Fonte">
+            <a href="#">A-</a>
+          </li>
+        </ul>
       </div>
     </header>
 
@@ -402,17 +439,6 @@
     
     <footer>
       <div class="container">
-        <ul id="accessibility">
-          <li class="inc-font" title="Aumentar Fonte">
-            <a href="#">A+</a>
-          </li>
-          <li class="res-font" title="Tamanho Normal da Fonte">
-            <a href="#">A</a>
-          </li>
-          <li class="dec-font" title="Diminuir Fonte">
-            <a href="#">A-</a>
-          </li>
-        </ul>
         <ul id="footer-menu">
           <li>
             <a href="meu-perfil.html"><span class="icon-user"></span>Perfil</a>

@@ -112,6 +112,10 @@ input, select {
   clear: both;
 }
 
+.appear {
+  display: block !important;
+}
+
 // icons
 .icon {
   width: 32px;
@@ -172,6 +176,28 @@ header {
 
   div {
     position: relative;
+
+    #accessibility {
+      position: absolute;
+      right: 40px;
+      top: 64px;
+      list-style: none;
+      background-color: @blue;
+      border-bottom-left-radius: 8px;
+      border-bottom-right-radius: 8px;
+      padding: 0;
+      z-index: 100;
+
+      li {
+        display: inline-block;
+
+        a {
+          font-weight: bold;
+          color: white !important;
+          line-height: 2em;
+        }
+      }
+    }
 
     a {
       padding: 8px 16px !important;
@@ -241,6 +267,17 @@ header {
       right: 0;
       top: 0;
 
+      a {
+        line-height: 32px;
+        text-align: center;
+        background-color: @white;
+        border-bottom: 1px solid (@beige - #333);
+
+        &:hover {
+          background-color: transparent;
+        }
+      }
+
       img {
         float: left;
         width: 30%;
@@ -248,7 +285,7 @@ header {
       }
 
       p {
-        line-height: 48px;
+        line-height: 64px;
         float: right;
         width: 70%;
         margin: 0;
@@ -256,10 +293,55 @@ header {
 
       article {
         position: absolute;
+        right: 0;
+        top: 64px;
+        width: 350px;
+        padding: 8px;
+        background-color: @beige;
+        box-shadow: @shadow;
+        border-radius: @radius;
+        display: none;
+        z-index: 200;
+
+        ul {
+          list-style: none;
+
+          li {
+
+            span {
+              margin-right: 20px;
+              float: none;
+              display: inline-block;
+
+              &:extend(.icon);
+
+              &:after {
+                content: attr(data-value);
+                position: absolute;
+                top: 8px;
+                left: 32px;
+              }
+            }
+          }
+        }
       }
 
       &:hover {
         background-color: rgba(255, 255, 255, 0.1);
+        cursor: pointer;
+
+        &:after {
+          content: "";
+          position: absolute;
+          bottom: 0;
+          left: 82px;
+          height: 0;
+          width: 0;
+          border-top: 8px solid white;
+          border-left: 8px solid transparent;
+          border-right: 8px solid transparent;
+          border-bottom: 8px solid transparent;
+        }
       }
     }
   }
@@ -767,10 +849,6 @@ header {
           top: 64px;
         }
 
-        .appear {
-          display: block !important;
-        }
-
         ul, article {
           position: absolute;
           right: 30px;
@@ -909,17 +987,6 @@ footer {
           display: block;
           color: white !important;
           position: relative;
-        }
-      }
-    }
-
-    #accessibility {
-      float: left;
-
-      li {
-
-        a {
-          font-weight: bold;
         }
       }
     }
