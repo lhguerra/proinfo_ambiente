@@ -31,61 +31,8 @@
     <script src="js/jquery.custom-scrollbar.js" type="text/javascript"></script>
     <link href="css/jquery.custom-scrollbar.css" rel="stylesheet" />
 
-    <script type="text/javascript">
-      $(document).ready(function() {
-        $(".scroll").customScrollbar({
-          skin: "default-skin",
-          hScroll: false
-        });
-        $('.has-scroller-elms').on('shown.bs.modal', function () {
-          $(".scroll").customScrollbar({
-            skin: "default-skin",
-            hScroll: false
-          });
-        });
-      });
-    </script>
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-   
-        // aumentando a fonte
-        $(".inc-font").click(function () {
-          var size = $("body").css('font-size');
-           
-          size = size.replace('px', '');
-          size = parseInt(size) + 2;
-           
-          $("body").animate({'font-size' : size + 'px'});
-        });
-         
-        //diminuindo a fonte
-        $(".dec-font").click(function () {
-          var size = $("body").css('font-size');
-           
-          size = size.replace('px', '');
-          size = parseInt(size) - 2;
-           
-          $("body").animate({'font-size' : size + 'px'});
-        });
-         
-        // resetando a fonte
-        $(".res-font").click(function () {   
-          $("body").animate({'font-size' : '14px'});
-        });
-      });
-    </script>
-
-    <script type="text/javascript">
-      $(function() {
-        var profileMenu = $('#user'),
-            profileBox = $('#user-modal');
-          
-        profileMenu.bind('click', function() {
-          profileBox.toggleClass('appear');
-        });
-      });
-    </script>
+    <!-- custom js -->
+    <script src="js/main.js" type="text/javascript"></script>
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -232,13 +179,13 @@
                             </td>
                           </tr>
                         </table>
-                        <button type="button" class="btn btn-primary">Acessar</button>
                       </div>
                     </div>
                     <div class="col-md-offset-1 col-md-10">
 
                     </div>
                   </article>
+                  <button type="button" class="btn btn-primary col-md-offset-1">Acessar</button>
                   <article class="row">
                     <div class="col-md-offset-1 col-md-11">
                       <p>
@@ -381,7 +328,6 @@
             <span class="icon-comment-20" data-value="26"></span>
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                <span class="sr-only"></span>
               </div>
             </div>
           </div>
@@ -395,7 +341,6 @@
             <span class="icon-comment-20" data-value="26"></span>
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                <span class="sr-only"></span>
               </div>
             </div>
           </div>
@@ -409,7 +354,6 @@
             <span class="icon-comment-20" data-value="26"></span>
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                <span class="sr-only"></span>
               </div>
             </div>
           </div>
@@ -423,7 +367,6 @@
             <span class="icon-comment-20" data-value="26"></span>
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                <span class="sr-only"></span>
               </div>
             </div>
           </div>
@@ -437,7 +380,6 @@
             <span class="icon-comment-20" data-value="26"></span>
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                <span class="sr-only"></span>
               </div>
             </div>
           </div>
@@ -451,7 +393,6 @@
             <span class="icon-comment-20" data-value="26"></span>
             <div class="progress">
               <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%;">
-                <span class="sr-only"></span>
               </div>
             </div>
           </div>

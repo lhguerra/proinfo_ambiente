@@ -27,52 +27,14 @@
     <!-- less compiler -->
     <script src="js/less-1.4.1.min.js" type="text/javascript"></script>
 
+    <!-- custom js -->
+    <script src="js/main.js" type="text/javascript"></script>
+
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="../../assets/js/html5shiv.js"></script>
       <script src="../../assets/js/respond.min.js"></script>
     <![endif]-->
-
-    <script type="text/javascript">
-      $(document).ready(function() {
-   
-        // aumentando a fonte
-        $(".inc-font").click(function () {
-          var size = $("body").css('font-size');
-           
-          size = size.replace('px', '');
-          size = parseInt(size) + 2;
-           
-          $("body").animate({'font-size' : size + 'px'});
-        });
-         
-        //diminuindo a fonte
-        $(".dec-font").click(function () {
-          var size = $("body").css('font-size');
-           
-          size = size.replace('px', '');
-          size = parseInt(size) - 2;
-           
-          $("body").animate({'font-size' : size + 'px'});
-        });
-         
-        // resetando a fonte
-        $(".res-font").click(function () {   
-          $("body").animate({'font-size' : '14px'});
-        });
-      });
-    </script>
-
-    <script type="text/javascript">
-      $(function() {
-        var profileMenu = $('#user'),
-            profileBox = $('#user-modal');
-          
-        profileMenu.bind('click', function() {
-          profileBox.toggleClass('appear');
-        });
-      });
-    </script>
   </head>
 
   <body>

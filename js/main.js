@@ -1,8 +1,14 @@
 // custom scrollbar
 $(document).ready(function() {
   $(".scroll").customScrollbar({
-    skin: "default-skin", 
+    skin: "default-skin",
     hScroll: false
+  });
+  $('.has-scroller-elms').on('shown.bs.modal', function () {
+    $(".scroll").customScrollbar({
+      skin: "default-skin",
+      hScroll: false
+    });
   });
 });
 
@@ -65,4 +71,15 @@ $(function () {
   $(window).bind('click', function(ev) {
       $('.appear').removeClass('appear');
     });
+});
+
+// bxSlider
+$(document).ready(function(){
+  $('.bxslider').bxSlider({
+    minSlides: 4,
+    maxSlides: 4,
+    slideWidth: 200,
+    slideMargin: 30,
+    pager: false
+  });
 });
