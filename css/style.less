@@ -178,29 +178,6 @@ header {
   div {
     position: relative;
 
-    #accessibility {
-      position: absolute;
-      right: 40px;
-      top: 64px;
-      list-style: none;
-      background-color: @gray;
-      border-bottom-left-radius: 8px;
-      border-bottom-right-radius: 8px;
-      padding: 0;
-      z-index: 100;
-
-      li {
-        display: inline-block;
-
-        a {
-          font-weight: bold;
-          color: white !important;
-          line-height: 2em;
-          padding: 0 8px !important;
-        }
-      }
-    }
-
     a {
       padding: 8px 16px !important;
 
@@ -349,6 +326,30 @@ header {
   }
 }
 
+#accessibility {
+  position: absolute;
+  margin-right: -440px;
+  right: 50%;
+  top: 64px;
+  list-style: none;
+  background-color: (@blue + #222);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding: 0;
+  z-index: 100;
+
+  li {
+    display: inline-block;
+
+    a {
+      font-weight: bold;
+      color: white !important;
+      line-height: 2em;
+      padding: 0 8px !important;
+    }
+  }
+}
+
 // general content styles
 #content {
   min-height: 100%;
@@ -362,21 +363,25 @@ header {
 // boxes styles
 .box-modal {
   background-color: @white;
-  padding: 4px;
+  padding: 8px !important;
   margin: 15px 0 15px 30px;
   border-radius: @radius;
   box-shadow: @shadow;
+  height: 180px;
+  overflow-y: hidden;
 
   &:extend(.col-md-5);
 
   .modal-info {
-    width: 50%;
+    width: 45%;
     float: right;
+    margin-top: 8px;
 
     span {
       float: none;
       width: 20px;
       height: 20px;
+      margin-bottom: 4px;
 
       &:extend(.icon);
 
@@ -389,7 +394,7 @@ header {
     }
 
     .progress {
-      height: 8px;
+      height: 12px;
       margin-bottom: 10px;
       border-radius: 0;
       border: 1px solid @gray;
@@ -397,7 +402,7 @@ header {
   }
 
   .modal-thumb {
-        width: 45%;
+        width: 50%;
         border-radius: @radius;
         box-shadow: @shadow;
   }
@@ -442,19 +447,17 @@ header {
   // border-radius: @radius;
   // box-shadow: @shadow;
 
-  &:extend(.col-md-6);
+  &:extend(.col-md-offset-1, .col-md-13);
 
   h3 {
     padding: 0 8px;
   }
 
   .vertical-box-container {
-    box-shadow: 0 -3px 3px 0 gray inset;
-    height: 380px;
     
     .box-modal {
-      width: 210px;
-      margin: 4px;
+
+      &:extend(.col-md-offset-1, .col-md-10);
     }
   }
 }
@@ -583,6 +586,13 @@ header {
         }
       }
     }
+  }
+}
+
+#index-comments {
+
+  .comment-container {
+    height: 600px;
   }
 }
 
