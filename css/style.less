@@ -360,6 +360,25 @@ header {
   &:extend(.container);
 }
 
+#mural {
+
+  h1 {
+
+    a {
+      position: relative;
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 8px;
+        left: 8px;
+        
+        &:extend(.icon);
+      }
+    }
+  }
+}
+
 // boxes styles
 .box-modal {
   background-color: @white;
@@ -369,6 +388,8 @@ header {
   box-shadow: @shadow;
   height: 180px;
   overflow-y: hidden;
+  position: relative;
+  border-bottom: 4px solid white;
 
   &:extend(.col-md-5);
 

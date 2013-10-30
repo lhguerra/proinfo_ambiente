@@ -47,7 +47,6 @@ $(document).ready(function(){
     ev.preventDefault();
     ev.stopImmediatePropagation()
     $('#user-modal').toggleClass('appear');
-    console.log('show user box');
   });
 });
 
@@ -82,5 +81,4 @@ $(document).ready(function(){
     slideMargin: 30,
     pager: false
   });
-  console.log('bxslider');
 });
