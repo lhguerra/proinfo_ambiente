@@ -42,12 +42,12 @@ $(document).ready(function() {
 });
 
 // profile menu
-$(function() {
-  var profileMenu = $('#user'),
-      profileBox = $('#user-modal');
-
-  profileMenu.bind('click', function() {
-    profileBox.toggleClass('appear');
+$(document).ready(function(){
+  $('#user').click(function(ev){
+    ev.preventDefault();
+    ev.stopImmediatePropagation()
+    $('#user-modal').toggleClass('appear');
+    console.log('show user box');
   });
 });
 
