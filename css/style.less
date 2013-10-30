@@ -130,9 +130,9 @@ input, select {
 
 .icon-content {background-position: -64px 0;}
 
-.icon-config {background-position: -96px 0px;}
+.icon-config {background-position: -128px -32px;}
 
-  .icon-config-b {background-position: 0 0;}
+  .icon-config-20 {background-position: -100px -64px;}
 
 .icon-question {background-position: -32px 0px;}
 
@@ -148,7 +148,9 @@ input, select {
 
   .icon-comment-20 {background-position: -40px -64px;}
 
-.icon-trash {background-position: 0 0;}
+.icon-trash {background-position: -128px 0;}
+
+  .icon-trash-20 {background-position: -120px -64px;}
 
 .icon-to-read {background-position: 0 0;}
 
@@ -159,6 +161,8 @@ input, select {
 .icon-like {background-position: -20px -64px;}
 
 .icon-ok {background-position: -60px -64px;}
+
+.icon-add {background-position: -160px 0;}
 
 // header styles
 header {
@@ -373,7 +377,7 @@ header {
         top: 8px;
         left: 8px;
         
-        &:extend(.icon);
+        &:extend(.icon, .icon-add);
       }
     }
   }
@@ -456,6 +460,8 @@ header {
   a {
 
     span {
+      width: 20px;
+      height: 20px;
 
       &:extend(.icon);
     }
@@ -966,6 +972,14 @@ header {
             margin: 16px 0;
           }
         }
+      }
+    }
+
+    .modal-footer {
+
+      span {
+
+        &:extend(.icon);
       }
     }
   }
