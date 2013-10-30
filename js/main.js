@@ -14,29 +14,29 @@ $(document).ready(function() {
 
 // increase font-size
 $(document).ready(function() {
- 
+
   // aumentando a fonte
   $(".inc-font").click(function () {
     var size = $("body").css('font-size');
-         
+
     size = size.replace('px', '');
     size = parseInt(size) + 2;
-         
+
     $("body").animate({'font-size' : size + 'px'});
   });
-       
+
   //diminuindo a fonte
   $(".dec-font").click(function () {
     var size = $("body").css('font-size');
-         
+
     size = size.replace('px', '');
     size = parseInt(size) - 2;
-         
+
     $("body").animate({'font-size' : size + 'px'});
   });
-       
+
   // resetando a fonte
-  $(".res-font").click(function () {   
+  $(".res-font").click(function () {
     $("body").animate({'font-size' : '14px'});
   });
 });
@@ -45,7 +45,7 @@ $(document).ready(function() {
 $(function() {
   var profileMenu = $('#user'),
       profileBox = $('#user-modal');
-    
+
   profileMenu.bind('click', function() {
     profileBox.toggleClass('appear');
   });
@@ -82,4 +82,5 @@ $(document).ready(function(){
     slideMargin: 30,
     pager: false
   });
+  console.log('bxslider');
 });
