@@ -168,7 +168,6 @@ input, select {
 header {
   background-color: @blue !important;
   border-bottom-color: @blue !important;
-  box-shadow: 0 2px 3px 0 @blue;
   opacity: 0.95;
   font-size: @font-size !important;
   z-index: 200;
@@ -386,7 +385,7 @@ header {
 // boxes styles
 .box-modal {
   background-color: @white;
-  padding: 8px !important;
+  padding: 12px !important;
   margin: 15px 0 15px 30px;
   border-radius: @radius;
   box-shadow: @shadow;
@@ -398,9 +397,9 @@ header {
   &:extend(.col-md-5);
 
   .modal-info {
-    width: 45%;
+    width: 40%;
     float: right;
-    margin-top: 8px;
+    margin: 5px 0;
 
     span {
       float: none;
@@ -413,13 +412,13 @@ header {
         content: attr(data-value);
         position: absolute;
         top: 0;
-        left: 20px;
+        left: 24px;
       }
     }
 
     .progress {
       height: 12px;
-      margin-bottom: 10px;
+      margin-top: 10px;
       border-radius: 0;
       border: 1px solid @gray;
     }
@@ -429,6 +428,7 @@ header {
         width: 50%;
         border-radius: @radius;
         box-shadow: @shadow;
+        margin-bottom: 10px;
   }
 }
 
@@ -470,6 +470,7 @@ header {
 
 .vertical-box {
   padding: 0;
+  margin-bottom: 12px !important;
   // background-color: white;
   // border-radius: @radius;
   // box-shadow: @shadow;
@@ -478,9 +479,14 @@ header {
 
   h3 {
     padding: 0 8px;
+
+    &:last-child {
+      padding-top: 12px;
+    }
   }
 
   .vertical-box-container {
+    display: block;
     
     .box-modal {
 
@@ -490,7 +496,7 @@ header {
 }
 
 .comment-box {
-  padding: 0;
+  padding: 4px;
   border-radius: @radius;
   background-color: @white;
   position: relative;
@@ -617,6 +623,7 @@ header {
 }
 
 #index-comments {
+  margin-top: 15px;
 
   .comment-container {
     height: 600px;
@@ -857,12 +864,13 @@ header {
       li {
         position: relative;
 
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.6) !important;
+        }
+
         a {
           display: block;
 
-          &:hover {
-            background-color: rgba(255, 255, 255, 0.6);
-          }
 
           span {
 
@@ -1008,7 +1016,6 @@ footer {
   width: 100%;
   height: 32px;
   background-color: @blue;
-  box-shadow: 0 -2px 3px 0 @blue;
   position: fixed;
   bottom: 0;
   opacity: 0.95;
