@@ -504,9 +504,16 @@ header {
     color: @blue;
   }
 
-  p {
-    margin-top: 20px;
-    padding: 4px;
+  .mural-wrapper {
+    width: 100%;
+    height: 150px;
+    overflow-y: hidden;
+    border-bottom: 8px solid white;
+
+    p {
+      margin-top: 8px;
+      padding: 4px;
+    }
   }
 
   a {
@@ -902,6 +909,12 @@ header {
 
 // hipermidia styles
 .hipermidia {
+  height: 100%;
+
+  iframe {
+    width: 100%;
+    height: 100%;
+  }
 
   &:before {
     content: url(../img/icon-dark-big-navigation_previous_item.png);
