@@ -172,7 +172,7 @@ header {
   border-bottom-color: @blue !important;
   opacity: 0.95;
   font-size: @font-size !important;
-  z-index: 200;
+  z-index: 300;
 
   &:extend(.navbar, .navbar-default, .navbar-fixed-top);
 
@@ -308,6 +308,10 @@ header {
             }
           }
         }
+
+        a {
+          padding: 8px !important;
+        }
       }
 
       &:hover {
@@ -351,6 +355,11 @@ header {
       color: white !important;
       line-height: 2em;
       padding: 0 8px !important;
+      display: block;
+
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.3);
+      }
     }
   }
 }
@@ -431,10 +440,10 @@ header {
   margin: 15px 0 15px 30px;
   border-radius: @radius;
   box-shadow: @shadow;
-  height: 180px;
+  height: 210px;
   overflow-y: hidden;
   position: relative;
-  border-bottom: 4px solid white;
+  border-bottom: 12px solid white;
 
   &:extend(.col-md-5);
 
@@ -470,7 +479,7 @@ header {
         width: 50%;
         border-radius: @radius;
         box-shadow: @shadow;
-        margin-bottom: 10px;
+        margin-bottom: 20px;
   }
 }
 
@@ -723,6 +732,7 @@ header {
   .bxslider {
   
     li {
+      height: 250px;
 
       &:extend(.vertical-box-container all);
 
@@ -808,7 +818,7 @@ header {
   }
 
   .history {
-    padding-right: 20px;
+    padding-right: 40px;
 
     &:extend(.col-md-offset-1, .col-md-11);
 
@@ -854,10 +864,14 @@ header {
   }
 
   .profile-data {
-    border-left: 2px solid @gray;
-    padding-left: 20px;
+    border-left: 2px solid (@beige - #333);
+    padding-left: 40px;
 
     &:extend(.col-md-11);
+
+    h2 {
+      margin-bottom: 24px;
+    }
 
     ul {
       list-style: none;
@@ -865,7 +879,7 @@ header {
 
     img {
       background-color: (@beige - #333);
-      margin-right: 8px;
+      margin-right: 16px;
     }
 
     span {
