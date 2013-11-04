@@ -406,11 +406,15 @@ header {
       li {
         position: relative;
 
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.6) !important;
+        }
 
         a {
           display: block !important;
 
           span {
+            float: none;
 
             &:extend(.icon);
           }
@@ -499,8 +503,16 @@ header {
   a {
 
     span {
+      float: none;
+      display: inline-block;
       width: 20px;
       height: 20px;
+      padding: 4px;
+      border-radius: 50%;
+
+      &:hover {
+        background-color: rgba(0, 0, 0, 0.2);
+      }
 
       &:extend(.icon);
     }
@@ -588,6 +600,13 @@ header {
         height: 20px;
         margin-right: 20px;
         float: right;
+        display: inline-block;
+        padding: 4px;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: rgba(0, 0, 0, 0.2);
+        }
 
         &:extend(.icon);
 
@@ -909,9 +928,10 @@ header {
 
         a {
           display: block;
-
+          position: static;
 
           span {
+            float: none;
 
             &:extend(.icon);
           }
