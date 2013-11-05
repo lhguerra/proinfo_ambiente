@@ -169,7 +169,7 @@ input, select {
 // header styles
 header {
   background-color: @blue !important;
-  border-bottom-color: @blue !important;
+  border-bottom-width: 0 !important;
   opacity: 0.95;
   font-size: @font-size !important;
   z-index: 300;
@@ -184,10 +184,17 @@ header {
     position: relative;
 
     a {
-      padding: 8px 16px !important;
+      padding: 0 16px !important;
 
       img {
-        height: 48px;
+        padding: 2px 8px 0 8px;
+        height: 64px;
+        border-bottom: 2px solid transparent;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1) !important;
+          border-bottom: 2px solid white;
+        }
       }
     }
 
@@ -200,13 +207,15 @@ header {
         li {
 
           a {
-            line-height: 64px !important;
-            padding: 0 8px !important;
+            line-height: 60px !important;
+            padding: 2px 8px 0 8px !important;
+            border-bottom: 2px solid transparent;
             display: block;
             color: white !important;
 
             &:hover {
               background-color: rgba(255, 255, 255, 0.1) !important;
+              border-bottom: 2px solid white;
             }
           }
 
@@ -440,10 +449,7 @@ header {
   margin: 15px 0 15px 30px;
   border-radius: @radius;
   box-shadow: @shadow;
-  height: 210px;
-  overflow-y: hidden;
   position: relative;
-  border-bottom: 12px solid white;
 
   &:extend(.col-md-5);
 
@@ -475,11 +481,71 @@ header {
     }
   }
 
+  .title-wrapper {
+    height: 80px;
+    overflow-y: hidden;
+    width: 100%;
+  }
+
   .modal-thumb {
-        width: 50%;
-        border-radius: @radius;
-        box-shadow: @shadow;
-        margin-bottom: 20px;
+    width: 50%;
+    border-radius: @radius;
+    box-shadow: @shadow;
+    margin-bottom: 20px;
+  }
+}
+
+.new {
+
+  &:before {
+    content: "Novo!";
+    line-height: 14px;
+    padding: 4px 8px;
+    color: white;
+    background-color: green;
+    position: absolute;
+    top: -22px;
+    right: 8px;
+    overflow: visible !important;
+    text-align: center;
+    border-top-right-radius: @radius;
+    border-top-left-radius: @radius;
+  }
+}
+
+.updated {
+
+  &:before {
+    content: "Atualizado!";
+    line-height: 14px;
+    padding: 4px 8px;
+    color: white;
+    background-color: @blue;
+    position: absolute;
+    top: -22px;
+    right: 8px;
+    overflow: visible !important;
+    text-align: center;
+    border-top-right-radius: @radius;
+    border-top-left-radius: @radius;
+  }
+}
+
+.soon {
+
+  &:before {
+    content: "Em breve!";
+    line-height: 14px;
+    padding: 4px 8px;
+    color: white;
+    background-color: @yellow;
+    position: absolute;
+    top: -22px;
+    right: 8px;
+    overflow: visible !important;
+    text-align: center;
+    border-top-right-radius: @radius;
+    border-top-left-radius: @radius;
   }
 }
 
@@ -664,6 +730,13 @@ header {
       width: 80%;
       float: right;
       margin-top: 4px;
+
+      span {
+
+        button {
+          margin: 0;
+        }
+      }
     }
   }
 
@@ -761,7 +834,7 @@ header {
     &:extend(.col-md-23);
 
     input {
-      margin: 4px;
+      margin: 8px;
       float: none;
 
       &:extend(.col-md-13);
@@ -769,7 +842,7 @@ header {
   }
 
   button {
-    margin: 4px 4px 20px 4px;
+    margin: 8px 8px 20px 8px;
   }
 
   a {
@@ -778,21 +851,21 @@ header {
 
 #register {
   border-left: 2px solid @gray;
-  padding-left: 20px;
+  padding-left: 40px;
 
   &:extend(.col-md-9);
 
   div {
 
     input, select {
-      margin: 4px;
+      margin: 8px;
 
       &:extend(.col-md-19);
     }
   }
 
   button {
-    margin: 4px;
+    margin: 8px;
   }
 }
 
@@ -1046,6 +1119,7 @@ header {
       article {
 
         .modal-info {
+          width: 60%;
 
           table {
             width: 100%;
@@ -1054,7 +1128,17 @@ header {
               width: 50%;
 
               .progress {
-                margin-top: 8px;
+                margin: 0 0 0 32px;
+                overflow: visible;
+                position: relative;
+
+                &:before {
+                  content: attr(data-percent);
+                  font-weight: bold;
+                  position: absolute;
+                  top: -5px;
+                  left: -34px;
+                }
               }
             }
           }
@@ -1084,7 +1168,7 @@ header {
   .modal {
 
     button {
-      margin: 8px 0;
+      margin: 8px 75px;
     }
       
     .close {
