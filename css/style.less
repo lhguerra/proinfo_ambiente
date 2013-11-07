@@ -984,6 +984,7 @@ header {
 // hipermidia styles
 .hipermidia {
   height: 100%;
+  padding-top: 64px !important;
 
   iframe {
     width: 100%;
@@ -995,6 +996,8 @@ header {
     position: fixed;
     top: 300px;
     left: 0;
+    background-color: @beige;
+    border-radius: 50%;
   }
 
   &:after {
@@ -1002,23 +1005,37 @@ header {
     position: fixed;
     top: 300px;
     right: 0;
+    background-color: @beige;
+    border-radius: 50%;
   }
 
   aside {
     width: 32px;
     position: fixed;
-    left: 50%;
-    margin-left: 480px;
-    top: 104px;
+    right: 0;
+    top: 72px;
     background-color: @beige;
-    border-top-right-radius: @radius;
-    border-bottom-right-radius: @radius;
+    border-top-left-radius: @radius;
+    border-bottom-left-radius: @radius;
 
     ul {
       list-style: none;
       padding: 0;
       margin: 0;
       position: static;
+
+      .inc-font,
+      .res-font,
+      .dec-font {
+        width: 32px;
+        text-align: center;
+
+        a {
+          color: @gray;
+          font-weight: bold;
+          line-height: 32px;
+        }
+      }
 
       li {
         position: relative;
@@ -1136,9 +1153,11 @@ header {
                 &:before {
                   content: attr(data-percent);
                   font-weight: bold;
+                  font-size: 18px;
+                  color: @blue;
                   position: absolute;
-                  top: -5px;
-                  left: -34px;
+                  top: -8px;
+                  left: -40px;
                 }
               }
             }
