@@ -82,3 +82,8 @@ $(document).ready(function(){
     pager: false
   });
 });
+
+// hipermidia iframe
+$(document).ready(function(){
+  ('#body').height ($('#myframe').contents().find('body').height());
+});
