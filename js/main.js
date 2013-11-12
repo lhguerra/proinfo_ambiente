@@ -84,6 +84,13 @@ $(document).ready(function(){
 });
 
 // hipermidia iframe
-$(document).ready(function(){
-  ('#body').height ($('#myframe').contents().find('body').height());
-});
+function resizeContent() {
+  $('#body').height ($('#myframe').contents().find('body').height());
+}
+// $(document).ready(function(){
+//   console.log('doc ready');
+//   $('#myframe').ready(function(){
+//     console.log('iframe ready');
+//     $('#body').height ($('#myframe').contents().find('body').height());
+//   });
+// });
