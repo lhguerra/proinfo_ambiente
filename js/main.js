@@ -87,14 +87,5 @@ $(document).ready(function(){
 function resizeContent() {
   var h = $('#myframe').contents().find('body').height();
   $('#myframe').height(h);
-  // $('#body').height(h + 116);
   $('#body').height(h + 20 + 32);
-  // $('#body').height ($('#myframe').contents().find('body').height());
 }
-// $(document).ready(function(){
-//   console.log('doc ready');
-//   $('#myframe').ready(function(){
-//     console.log('iframe ready');
-//     $('#body').height ($('#myframe').contents().find('body').height());
-//   });
-// });
