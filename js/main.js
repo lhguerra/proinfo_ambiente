@@ -23,6 +23,7 @@ $(document).ready(function() {
     size = parseInt(size) + 2;
 
     $("body").animate({'font-size' : size + 'px'});
+    $('#myframe').contents().find('body').animate({'font-size' : size + 'px'});
   });
 
   //diminuindo a fonte
@@ -33,11 +34,13 @@ $(document).ready(function() {
     size = parseInt(size) - 2;
 
     $("body").animate({'font-size' : size + 'px'});
+    $('#myframe').contents().find('body').animate({'font-size' : size + 'px'});
   });
 
   // resetando a fonte
   $(".res-font").click(function () {
     $("body").animate({'font-size' : '14px'});
+    $('#myframe').contents().find('body').animate({'font-size' : '14px'});
   });
 });
 
