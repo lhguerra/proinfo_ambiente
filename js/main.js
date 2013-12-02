@@ -24,6 +24,7 @@ $(document).ready(function() {
 
     $("body").animate({'font-size' : size + 'px'});
     $('#myframe').contents().find('body').animate({'font-size' : size + 'px'});
+    resizeContent();
   });
 
   //diminuindo a fonte
@@ -35,12 +36,14 @@ $(document).ready(function() {
 
     $("body").animate({'font-size' : size + 'px'});
     $('#myframe').contents().find('body').animate({'font-size' : size + 'px'});
+    resizeContent();
   });
 
   // resetando a fonte
   $(".res-font").click(function () {
     $("body").animate({'font-size' : '14px'});
     $('#myframe').contents().find('body').animate({'font-size' : '14px'});
+    resizeContent();
   });
 });
 
