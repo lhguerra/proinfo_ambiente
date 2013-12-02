@@ -15,7 +15,7 @@ h1{
   font-weight: 300;
   font-size: 3.5em;
   line-height: 1em;
-  transition: font-size 0.5s;
+  /*transition: font-size 0.5s;*/
 }
 h2{
   color: #6B6B6B;
@@ -23,27 +23,27 @@ h2{
   font-weight: lighter;
   font-size: 2em;
   line-height: 1em;
-  transition: font-size 0.5s;
+  /*transition: font-size 0.5s;*/
 }
 h3{
   color: #6B6B6B;
   font-family: 'Open Sans', arial, Sans-serif;
   font-weight: 300;
   font-size: 1.5em;
-  transition: font-size 0.5s;
+  /*transition: font-size 0.5s;*/
 }
 h4{
   color: #6B6B6B;
   font-family: 'Open Sans', arial, Sans-serif;
   font-weight: bolder;
   font-size: 1.5em;
-  transition: font-size 0.5s;
+  /*transition: font-size 0.5s;*/
 }
 
 p{
   color:#2F312E;
   font-family: roboto, Sans-serif;
-  transition: font-size 0.5s;
+  /*transition: font-size 0.5s;*/
 }
 
 
@@ -51,24 +51,24 @@ p{
 
   h1{
     font-size: 4em !important;
-    transition: font-size 0.5s;
+    /*transition: font-size 0.5s;*/
     }
   h2{
     font-size: 3em !important;
-    transition: font-size 0.5s;
+    /*transition: font-size 0.5s;*/
   }
   h3{
     font-size: 2.5em !important;
-    transition: font-size 0.5s;
+    /*transition: font-size 0.5s;*/
   }
   h4{
     font-size: 2.5em !important;
-    transition: font-size 0.5s;
+    /*transition: font-size 0.5s;*/
   }
 
   p{
     font-size: 1.3em !important;
-    transition: font-size 0.5s;
+    /*transition: font-size 0.5s;*/
   }
 
   .migalha p{
@@ -103,7 +103,7 @@ p{
   color: #fff;
 }
 .cover{
-  
+
 }
 .cover h1,.cover h2{
   color: #FFF;
@@ -114,7 +114,7 @@ p{
 
 /*-------- CORES DOS NUCLEOS - COR DE CAPA --------*/
 
-/* 
+/*
   nb = Núcles de Base
   pl = PLAC
   ge = Geral
@@ -148,7 +148,7 @@ p{
 
 .author div{
   margin: 10px 10px 30px 0;
-  padding: 0; 
+  padding: 0;
   font-family: "Open Sans";
   font-weight: 300;
   font-size: 1.3em;
@@ -252,7 +252,7 @@ p{
     max-width: 250px !important;
     padding-top: 3px !important;
 
-    transition: max-width 0.5s;
+    /*transition: max-width 0.5s;*/
   }
   .equipeicon{
     vertical-align: -28% !important;
@@ -361,17 +361,17 @@ p{
   font-weight: 700;
   font-family: "Open Sans Condensed", arial, Sans-serif;
   font-size: 2em;
-  transition: background 0.3s;
+  /*transition: background 0.3s;*/
 }
 .buttonstart:hover{
   text-decoration: none;
   color: #FFF;
-  transition: background 0.3s;
+  /*transition: background 0.3s;*/
 }
 
 /*-------------------BOTÃO START DOS NÚCLEOS-----------------*/
 
-/* 
+/*
   nb = Núcles de Base
   pl = PLAC
   ge = Geral
@@ -464,7 +464,7 @@ p{
 
 /*-------- CORES DOS NUCLEOS - COR DOS TÍTULOS DE CENÁRIOS --------*/
 
-/* 
+/*
   nb = Núcles de Base
   pl = PLAC
   ge = Geral
@@ -526,19 +526,19 @@ p{
 .choosenblock{
   position: relative;
   overflow: hidden;
-  transition: opacity 0.5s;
+  /*transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;*/
 }
 .choosenblock:hover{
   opacity: 0.5;
-  transition: opacity 0.5s;
+  /*transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;*/
 }
 
 .choosenblock a.buttonstart{
@@ -643,7 +643,7 @@ p{
 
 /*-------- CORES DOS NUCLEOS - TOPICOS --------*/
 
-/* 
+/*
   nb = Núcles de Base
   pl = PLAC
   ge = Geral
@@ -783,7 +783,7 @@ p{
   height: 30px;
   max-width: 190px;
   margin: auto;
-  transition: max-width 0.5s;
+  /*transition: max-width 0.5s;*/
 }
 .equipeicon{
   vertical-align:-45%;
@@ -809,7 +809,7 @@ p{
 }
 
 .equipeimgs img{
-    margin-bottom: 15px;   
+    margin-bottom: 15px;
 }
 
 /*-----------------SIDEBAR-----------------*/
@@ -824,12 +824,12 @@ p{
 #saiba-mais {
     position: fixed;
     top: 0;
-    bottom: 0;    
+    bottom: 0;
     left: -50%; /* igual a largura */
     width: 50%;
     max-width: 991px;
-    background-color: #D56A27;    
-    transition: left 250ms;
+    background-color: #D56A27;
+    /*transition: left 250ms;*/
     z-index: 5;
 }
 
@@ -840,12 +840,12 @@ p{
 #saiba-mais2 {
     position: fixed;
     top: 0;
-    bottom: 0;    
+    bottom: 0;
     right: -50%; /* igual a largura */
     width: 50%;
     max-width: 991px;
-    background-color: #D56A27;    
-    transition: right 250ms;
+    background-color: #D56A27;
+    /*transition: right 250ms;*/
     z-index: 5;
 }
 #saiba-mais2.open {
@@ -855,12 +855,12 @@ p{
 #glossario {
     position: fixed;
     top: 0;
-    bottom: 0;    
+    bottom: 0;
     left: -40%; /* igual a largura */
     width: 40%;
     max-width: 991px;
-    background-color: #45843E;    
-    transition: left 250ms;
+    background-color: #45843E;
+    /*transition: left 250ms;*/
     z-index: 6;
 }
 #glossario.open {
@@ -870,12 +870,12 @@ p{
 #glossario2 {
     position: fixed;
     top: 0;
-    bottom: 0;    
+    bottom: 0;
     right: -40%; /* igual a largura */
     width: 40%;
     max-width: 991px;
-    background-color: #45843E;    
-    transition: right 250ms;
+    background-color: #45843E;
+    /*transition: right 250ms;*/
     z-index: 6;
 }
 #glossario2.open {
@@ -927,7 +927,7 @@ p{
 
 /* EXPAND.JS */
 #showmore article .content_w {
-  
+
   overflow: hidden;
   height: 100px;
 }
@@ -1054,19 +1054,19 @@ section.entries article .content {
   width:100%;
   height:100%;
   opacity:0;
-  transition: opacity 0.5s;
+  /*transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;*/
 }
 .choosencover:hover .choosencovercolor{
   opacity: 0.5;
-  transition: opacity 0.5s;
+  /*transition: opacity 0.5s;
   -moz-transition: opacity 0.5s;
   -o-transition: opacity 0.5s;
   -webkit-transition: opacity 0.5s;
-  -ms-transition: opacity 0.5s;
+  -ms-transition: opacity 0.5s;*/
 }
 .choosencover .iconmidia{
   bottom: 0;
