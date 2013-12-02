@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Note there is no responsive meta tag here -->
+
+    <link rel="shortcut icon" href="../../assets/ico/favicon.png">
+
+    <title>Educação na Cultura Digital</title>
+
+    <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet/less" type="text/css" href="css/style.less">
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- less compiler -->
+    <script src="js/less-1.4.1.min.js" type="text/javascript"></script>
+
+    <!-- custom js -->
+    <script src="js/main.js" type="text/javascript"></script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="../../assets/js/html5shiv.js"></script>
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <!-- Fixed navbar -->
+    <!--#include virtual="files/header.html" -->
+
+    <!--#include virtual="files/accessibility.html" -->
+
+    <div id="content" class="container">
+      <section class="profile" class="row">
+        <h1>Perfil de João da Silva</h1>
+        <article class="history">
+          <h2>Leituras Recentes</h2>
+          <div>
+            <table>
+              <tr>
+                <td><h6>Hoje</h6></td>
+                <td><span></span></td>
+              </tr>
+            </table>
+            <a href="#"><h4>Tecnologias Assistivas</h4></a>
+            <a href="#"><h4>Nucleo de Base II</h4></a>
+          </div>
+          <div>
+            <table>
+              <tr>
+                <td><h6>Ontem</h6></td>
+                <td><span></span></td>
+              </tr>
+            </table>
+            <a href="#"><h4>Matematica Ensino Medio</h4></a>
+            <a href="#"><h4>Portugues Ensino Fundamental</h4></a>
+          </div>
+          <div>
+            <table>
+              <tr>
+                <td><h6>20&nbsp;de&nbsp;Setembro</h6></td>
+                <td><span></span></td>
+              </tr>
+            </table>
+            <a href="#"><h4>Etica</h4></a>
+            <a href="#"><h4>Jogos</h4></a>
+          </div>
+        </article>
+        <article class="profile-data">
+          <h2>Dados</h2>
+          <img src="img/icon-dark-big-social_person.png" />
+
+          <ul>
+            <li>
+              <h3>Mariana</h3>
+            </li>
+            <li>
+              <span class="icon-read" data-value="2"></span>
+              <span class="icon-to-read" data-value="3"></span>
+              <span class="icon-calendar" data-value="15"></span>
+              <span class="icon-social" data-value="4"></span>
+            </li>
+          </ul>
+          <br />
+          <br />
+          <p>
+            Universidade Federal de Santa Catarina
+          </p>
+           <p>
+            <a href="#">jovis@aol.com</a>
+          </p>
+           <p>
+            <a href="#">facebook.com/jovisdagalera</a>
+          </p>
+          <h3>Mandar um e-mail:</h3>
+          <textarea rows="4" cols="40" placeholder="digite sua mensagem..."></textarea>
+          <button type="button" class="btn btn-default">Enviar</button>
+        </article>
+      </section>
+    </div> <!-- /container -->
+
+    <footer>
+      <div class="container">
+        <ul id="footer-menu">
+          <li>
+            <a href="#"><span class="icon-content"></span>Mural</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon-question"></span>Ajuda</a>
+          </li>
+        </ul>
+      </div>
+    </footer>

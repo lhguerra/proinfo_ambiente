@@ -133,6 +133,9 @@
         </article>
       </section>
       <!--#include virtual="files/hipermidia-lightbox.html" -->
+      <!--#include virtual="files/nota-lightbox.html" -->
+      <!--#include virtual="files/nota-edit.html" -->
+      <!--#include virtual="files/nota-delete.html" -->
     </div> <!-- /container -->
 
     <!--#include virtual="files/footer.html" -->
