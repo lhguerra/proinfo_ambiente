@@ -457,34 +457,6 @@ header {
 
   &:extend(.col-md-5);
 
-  .modal-info {
-    width: 40%;
-    float: right;
-    margin: 5px 0;
-
-    span {
-      float: none;
-      width: 20px;
-      height: 20px;
-
-      &:extend(.icon);
-
-      &:after {
-        content: attr(data-value);
-        position: absolute;
-        top: 0;
-        left: 24px;
-      }
-    }
-
-    .progress {
-      height: 12px;
-      margin-top: 10px;
-      border-radius: 0;
-      border: 1px solid @gray;
-    }
-  }
-
   .title-wrapper {
     height: 80px;
     overflow-y: hidden;
@@ -514,6 +486,34 @@ header {
     border-top-left-radius: @radius;
   }
 }
+
+.modal-info {
+    width: 40%;
+    float: right;
+    margin: 5px 0;
+
+    span {
+      float: none;
+      width: 20px;
+      height: 20px;
+
+      &:extend(.icon);
+
+      &:after {
+        content: attr(data-value);
+        position: absolute;
+        top: 0;
+        left: 24px;
+      }
+    }
+
+    .progress {
+      height: 12px;
+      margin-top: 10px;
+      border-radius: 0;
+      border: 1px solid @gray;
+    }
+  }
 
 .updated {
 
@@ -1139,6 +1139,10 @@ header {
 
     .modal-body {
 
+      button {
+        margin: 8px 75px;
+      }
+
       .nota-info {
         margin: 0;
         text-align: right;
@@ -1183,6 +1187,10 @@ header {
           p {
             margin: 0 0 16px 0;
           }
+
+          img {
+            max-width: 100%;
+          }
         }
       }
     }
@@ -1200,10 +1208,6 @@ header {
 .box-modal {
 
   .modal {
-
-    button {
-      margin: 8px 75px;
-    }
 
     .close {
       margin: 0;

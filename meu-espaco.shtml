@@ -132,6 +132,7 @@
           </ul>
         </article>
       </section>
+      <!--#include virtual="files/hipermidia-lightbox.html" -->
     </div> <!-- /container -->
 
     <!--#include virtual="files/footer.html" -->
