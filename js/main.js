@@ -22,8 +22,8 @@ $(document).ready(function() {
     size = size.replace('px', '');
     size = parseInt(size) + 2;
 
-    $("body").animate({'font-size' : size + 'px'});
-    $('#myframe').contents().find('body').animate({'font-size' : size + 'px'});
+    $("body").css('font-size' , size + 'px');
+    $('#myframe').contents().find('body').css('font-size' , size + 'px');
     resizeContent();
   });
 
@@ -34,15 +34,15 @@ $(document).ready(function() {
     size = size.replace('px', '');
     size = parseInt(size) - 2;
 
-    $("body").animate({'font-size' : size + 'px'});
-    $('#myframe').contents().find('body').animate({'font-size' : size + 'px'});
+    $("body").css('font-size' , size + 'px');
+    $('#myframe').contents().find('body').css('font-size' , size + 'px');
     resizeContent();
   });
 
   // resetando a fonte
   $(".res-font").click(function () {
-    $("body").animate({'font-size' : '14px'});
-    $('#myframe').contents().find('body').animate({'font-size' : '14px'});
+    $("body").css('font-size' , '14px');
+    $('#myframe').contents().find('body').css('font-size' , '14px');
     resizeContent();
   });
 });
