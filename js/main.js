@@ -47,6 +47,15 @@ $(document).ready(function() {
   });
 });
 
+// high contrast
+$(document).ready(function() {
+
+  $(".high-contrast").click(function () {
+    $('<link rel="stylesheet/less" type="text/css" />').attr('href', 'high-contrast.less') );
+  });
+
+});
+
 // profile menu
 $(document).ready(function(){
   $('#user').click(function(ev){
