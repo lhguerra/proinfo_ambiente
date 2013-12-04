@@ -51,7 +51,7 @@ $(document).ready(function() {
 $(document).ready(function() {
 
   $(".high-contrast").click(function () {
-    $('<link rel="stylesheet/less" type="text/css" />').attr('href', 'high-contrast.less') );
+    $('<link rel="stylesheet/less" type="text/css" />').attr('href', 'css/high-contrast.less') );
   });
 
 });
