@@ -578,7 +578,7 @@ header {
     width: 100%;
     height: 150px;
     overflow-y: hidden;
-    border-bottom: 8px solid white;
+    margin-bottom: 8px;
 
     p {
       margin-top: 8px;
@@ -1052,6 +1052,21 @@ header {
           color: @gray;
           font-weight: bold;
           line-height: 32px;
+        }
+      }
+
+      .high-contrast {
+
+        a {
+          display: block;
+          padding: 6px;
+
+          div {
+            border-radius: 50%;
+            border: 3px solid @blue;
+            width: 18px;
+            height: 18px;
+          }
         }
       }
 

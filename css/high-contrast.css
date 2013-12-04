@@ -6,3 +6,11 @@
 body {
   background-image: none !important;
 }
+
+header {
+  background-color: black !important;
+}
+
+.progress-bar {
+  background-color: white !important;
+}
