@@ -50,8 +50,17 @@ $(document).ready(function() {
 // high contrast
 $(document).ready(function() {
 
+  var showing = false;
   $(".high-contrast").click(function () {
-    $('head').append('<link rel="stylesheet" type="text/css" href="css/high-contrast.css">')
+
+    if (showing) {
+      $('#high-contrast').remove();
+      showing = false;
+    } else {
+      $('head').append('<link id="high-contrast" rel="stylesheet" type="text/css" href="css/high-contrast.css">');
+      $('#myframe').contents().find('head').append('<link id="high-contrast" rel="stylesheet" type="text/css" href="css/high-contrast.css">');
+      showing = true;
+    }
   });
 
 });
