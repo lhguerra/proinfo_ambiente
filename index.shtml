@@ -1,0 +1,53 @@
+    <!-- Fixed navbar -->
+    <!--#include virtual="files/header.html" -->
+
+    <!--#include virtual="files/accessibility.html" -->
+
+    <div id="content" class="container">
+
+      <section id="bem-vindo" class="row">
+          <h1>Ola, cursista</h1>
+        <article class="col-md-offset-1 col-md-14">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </article>
+        <img class="col-md-offset-1 col-md-7" src="img/home-picture.jpg">
+      </section>
+
+      <section class="row">
+        <article class="vertical-box">
+          <div class="vertical-box-container">
+          <h3>Lancamentos</h3>
+            
+            <!--#include virtual="files/box-modal.html" -->
+
+            <!--#include virtual="files/box-modal.html" -->
+
+            <!--#include virtual="files/box-modal.html" -->
+
+            <!--#include virtual="files/box-modal.html" -->
+
+          </div>
+
+          <div class="vertical-box-container">
+          <h3>Ultimos Acessos</h3>
+
+            <!--#include virtual="files/box-modal.html" -->
+
+            <!--#include virtual="files/box-modal.html" -->
+            
+            <!--#include virtual="files/box-modal.html" -->
+            
+            <!--#include virtual="files/box-modal.html" -->
+          </div>
+        </article>
+          <h3>Comentarios sobre o curso</h3>
+        <article id="index-comments" class="col-md-9 comment-box">
+          <!--#include virtual="files/comment-box.html" -->
+        </article>
+      </section>
+      <!--#include virtual="files/hipermidia-lightbox.html" -->
+    </div> <!-- /container -->
+
+<!--#include virtual="files/footer.html" -->

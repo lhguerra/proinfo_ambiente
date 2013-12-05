@@ -1,0 +1,91 @@
+    <!-- Fixed navbar -->
+    <!--#include virtual="files/header.html" -->
+
+    <!--#include virtual="files/accessibility.html" -->
+
+    <div id="content" class="container">
+      <h1>Meu Espaco</h1>
+      <section id="progresso" class="row">
+        <a href="#"><h2 class="col-md-offset-1">Progesso</h2></a>
+        <article class="carrousel">
+          <ul class="bxslider row">
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="favoritos" class="row">
+        <a href="#"><h2 class="col-md-offset-1">Favoritos</h2></a>
+        <article class="carrousel">
+          <ul class="bxslider row">
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/box-modal.html" -->
+            </li>
+          </ul>
+        </article>
+      </section>
+
+      <section id="mural" class="row">
+        <a href="#"><h2 class="col-md-offset-1">Mural</h2></a>
+        <article class="carrousel">
+          <ul class="bxslider row">
+            <li>
+              <!--#include virtual="files/mural-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/mural-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/mural-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/mural-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/mural-modal.html" -->
+            </li>
+            <li>
+              <!--#include virtual="files/mural-modal.html" -->
+            </li>
+          </ul>
+        </article>
+      </section>
+      <!--#include virtual="files/hipermidia-lightbox.html" -->
+      <!--#include virtual="files/nota-lightbox.html" -->
+      <!--#include virtual="files/nota-edit.html" -->
+      <!--#include virtual="files/nota-delete.html" -->
+    </div> <!-- /container -->
+
+    <!--#include virtual="files/footer.html" -->

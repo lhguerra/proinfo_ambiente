@@ -1,0 +1,27 @@
+    <!-- Fixed navbar -->
+    <!--#include virtual="files/header.html" -->
+
+    <!--#include virtual="files/accessibility.html" -->
+
+    <div id="content" class="container">
+      <h1>Favoritos</h1>
+      <section class="row">
+        <!--#include virtual="files/box-modal.html" -->
+
+        <!--#include virtual="files/box-modal.html" -->
+
+        <!--#include virtual="files/box-modal.html" -->
+
+        <!--#include virtual="files/box-modal.html" -->
+
+        <!--#include virtual="files/box-modal.html" -->
+
+        <!--#include virtual="files/box-modal.html" -->
+        
+        <!--#include virtual="files/box-modal.html" -->
+
+        <!--#include virtual="files/hipermidia-lightbox.html" -->
+      </section>
+    </div> <!-- /container -->
+
+    <!--#include virtual="files/footer.html" -->

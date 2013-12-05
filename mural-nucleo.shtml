@@ -1,0 +1,34 @@
+    <!-- Fixed navbar -->
+    <!--#include virtual="files/header.html" -->
+
+    <!--#include virtual="files/accessibility.html" -->
+
+    <div id="content" class="container mural-nucleo">
+      <aside>
+        <ul>
+          <li>
+            <a data-toggle="modal" href="#nota1-edit"><span title="Adicionar Nota" class="icon-add"></span></a>
+          </li>
+        </ul>
+      </aside>
+      <section id="mural" class="row">
+        <h1>Mural - Notas do Núcleo de Base II</h1>
+        <!--#include virtual="files/mural-modal.html" -->
+
+        <!--#include virtual="files/mural-modal.html" -->
+
+        <!--#include virtual="files/mural-modal.html" -->
+
+        <!--#include virtual="files/mural-modal.html" -->
+
+        <!--#include virtual="files/mural-modal.html" -->
+
+        <!--#include virtual="files/mural-modal.html" -->
+      </section>
+      <!--#include virtual="files/hipermidia-lightbox.html" -->
+      <!--#include virtual="files/nota-lightbox.html" -->
+      <!--#include virtual="files/nota-edit.html" -->
+      <!--#include virtual="files/nota-delete.html" -->
+    </div> <!-- /container -->
+
+    <!--#include virtual="files/footer.html" -->

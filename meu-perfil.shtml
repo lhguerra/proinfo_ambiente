@@ -1,0 +1,80 @@
+    <!--#include virtual="files/header.html" -->
+
+    <!--#include virtual="files/accessibility.html" -->
+
+    <div id="content" class="container">
+      <section class="profile" class="row">
+        <h1>Meu Perfil</h1>
+        <article class="history">
+          <h2>Leituras Recentes</h2>
+          <div>
+            <table>
+              <tr>
+                <td><h6>Hoje</h6></td>
+                <td><span></span></td>
+              </tr>
+            </table>
+            <a href="#"><h4>Tecnologias Assistivas</h4></a>
+            <a href="#"><h4>Nucleo de Base II</h4></a>
+          </div>
+          <div>
+            <table>
+              <tr>
+                <td><h6>Ontem</h6></td>
+                <td><span></span></td>
+              </tr>
+            </table>
+            <a href="#"><h4>Matematica Ensino Medio</h4></a>
+            <a href="#"><h4>Portugues Ensino Fundamental</h4></a>
+          </div>
+          <div>
+            <table>
+              <tr>
+                <td><h6>20&nbsp;de&nbsp;Setembro</h6></td>
+                <td><span></span></td>
+              </tr>
+            </table>
+            <a href="#"><h4>Etica</h4></a>
+            <a href="#"><h4>Jogos</h4></a>
+          </div>
+        </article>
+        <article class="profile-data">
+          <h2>Seus Dados</h2>
+          <img src="img/icon-dark-big-social_person.png" />
+          <ul>
+            <li>
+              <h3>Mariana</h3>
+            </li>
+            <li>
+              <span class="icon-read" data-value="2"></span>
+              <span class="icon-to-read" data-value="3"></span>
+              <span class="icon-calendar" data-value="15"></span>
+              <span class="icon-like" data-value="4"></span>
+            </li>
+          </ul>
+          <br />
+          <p>
+            Universidade Federal de Santa Catarina
+          </p>
+           <p>
+            jovis@aol.com
+          </p>
+           <p>
+            facebook.com/jovisdagalera
+          </p>
+        </article>
+      </section>
+    </div> <!-- /container -->
+
+    <footer>
+      <div class="container">
+        <ul id="footer-menu">
+          <li>
+            <a href="#"><span class="icon-content"></span>Mural</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon-question"></span>Ajuda</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
