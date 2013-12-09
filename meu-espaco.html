@@ -13,6 +13,9 @@
     <title>Educação na Cultura Digital</title>
 
     <!-- fonts -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+
+    <!-- fonts -->
     <link href='http://fonts.googleapis.com/css?family=Roboto:300' rel='stylesheet' type='text/css'>
 
     <!-- Custom styles for this template -->
@@ -27,13 +30,6 @@
     <!-- less compiler -->
     <script src="js/less-1.4.1.min.js" type="text/javascript"></script>
 
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="../../assets/js/html5shiv.js"></script>
-      <script src="../../assets/js/respond.min.js"></script>
-    <![endif]-->
-
-
     <!-- jquery scrollbar -->
     <script src="js/jquery.custom-scrollbar.js" type="text/javascript"></script>
     <link href="css/jquery.custom-scrollbar.css" rel="stylesheet" />
@@ -47,11 +43,78 @@
   </head>
 
   <body>
+    <header>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img id="logo" alt="" src="img/logo.png">
+        </a>
+        <nav>
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="index.html">Home</a></li>
+            <li id="meu-espaco">
+              <a href="meu-espaco.html">Meu Espaco</a>
+              <ul>
+                <li><a href="#">Progresso</a></li>
+                <li><a href="favoritos.html">Favoritos</a></li>
+                <li><a href="mural-nucleo.html">Mural</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Nucleos de Base</a>
+            </li>
+            <li>
+              <a href="#">Nucleos Especificos</a>
+            </li>
+            <li>
+              <a href="#">PLACs</a>
+            </li>
+            <li>
+              <a href="#">Nucleos Avancados</a>
+            </li>
+          </ul>
+        </nav><!--/.nav-collapse -->
+        <div id="user">
+          <img alt="" src="img/icon-dark-big-social_person.png">
+          <p>
+            Mariana
+          </p>
 
-    <!-- Fixed navbar -->
-    <!--#include virtual="files/header.html" -->
+          <article id="user-modal">
+            <img src="img/icon-dark-big-social_person.png" />
+            <ul>
+              <li>
+                <h3>Mariana</h3>
+              </li>
+              <li>
+                <span title="Modulos completos" class="icon-read" data-value="2"></span>
+                <span title="Modulos em curso" class="icon-to-read" data-value="3"></span>
+                <span title="Dias no curso" class="icon-calendar" data-value="15"></span>
+                <span title="Likes" class="icon-social" data-value="4"></span>
+              </li>
+            </ul>
+            <a href="#">Meu Perfil</a>
+            <a href="#">Configuracoes</a>
+            <a href="#">Sair</a>
+          </article>
+        </div>
+      </div>
+    </header>
 
-    <!--#include virtual="files/accessibility.html" -->
+
+    <ul id="accessibility">
+      <li class="high-contrast" title="Alto Contraste">
+        <a title="Aumentar letra" href="#">Alto Contraste</a>
+      </li>
+      <li class="inc-font" title="Aumentar Fonte">
+        <a title="Aumentar letra" href="#">A+</a>
+      </li>
+      <li class="res-font" title="Tamanho Normal da Fonte">
+        <a title="Tamanho normal da letra" href="#">A&nbsp;</a>
+      </li>
+      <li class="dec-font" title="Diminuir Fonte">
+        <a title="Diminuir letra" href="#">A-</a>
+      </li>
+    </ul>
 
     <div id="content" class="container">
       <h1>Meu Espaco</h1>
@@ -350,15 +413,15 @@
       </section>
     </div> <!-- /container -->
 
-    <footer>
-      <div class="container">
-        <ul id="footer-menu">
-          <li>
-            <a href="#"><span class="icon-content"></span>Mural</a>
-          </li>
-          <li>
-            <a href="#"><span class="icon-question"></span>Ajuda</a>
-          </li>
-        </ul>
-      </div>
-    </footer>
+<footer>
+  <div class="container">
+    <ul id="footer-menu">
+      <li>
+        <a href="mural-nucleo.html"><span class="icon-mural"></span>Mural</a>
+      </li>
+      <li>
+        <a href="#"><span class="icon-question"></span>Ajuda</a>
+      </li>
+    </ul>
+  </div>
+</footer>
