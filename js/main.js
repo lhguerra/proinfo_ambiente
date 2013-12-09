@@ -55,6 +55,7 @@ $(document).ready(function() {
 
     if (showing) {
       $('#high-contrast').remove();
+      $('#myframe').contents().find('#high-contrast').remove();
       showing = false;
     } else {
       $('head').append('<link id="high-contrast" rel="stylesheet" type="text/css" href="css/high-contrast.css">');
